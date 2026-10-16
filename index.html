@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adeoluwa Adesunloye · Growth Marketing, Business Development & Sales</title>
+<meta name="description" content="Adeoluwa Adesunloye works across growth marketing, business development and sales with 6+ years across Nigeria and the UK. Over 940 vendors signed in person, 21,323 app users in seven months, a sold-out investment conference and charity events that drew 31,500 people.">
+<meta property="og:title" content="Adeoluwa Adesunloye · Growth Marketing, Business Development & Sales">
+<meta property="og:description" content="Case studies in field sales, partnerships, events and paid growth across Nigeria and the UK.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&display=swap">
+<style>
+/* Layout concept: a comic-book issue, told calmly. Dark ink cover, cream paper pages with panel borders,
+   one red accent for action and gold for emphasis. Montserrat throughout. Single committed theme. */
+:root{
+  --ink:#0d1226;        /* cover ink, near-navy black */
+  --ink-2:#161c38;      /* raised ink surfaces */
+  --paper:#f3ecdc;      /* aged comic newsprint */
+  --paper-2:#e8dfc9;    /* darker paper for alternating pages */
+  --line:#1a1a1a;       /* panel border black */
+  --text:#1c1a17;       /* body text on paper */
+  --muted:#6b6354;      /* captions on paper */
+  --red:#d7262c;        /* the one action colour */
+  --gold:#f2b632;       /* emphasis */
+  --sky:#3aa6d6;        /* cool secondary, cover glow only */
+  --font:'Montserrat','Segoe UI',Helvetica,Arial,sans-serif;
+  --gutter:clamp(16px,5vw,64px);
+  --measure:62ch;
+  --sy:0;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:17px;line-height:1.6;color:var(--text);background:var(--paper);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font);font-weight:800;line-height:1;letter-spacing:-.015em;text-wrap:balance;margin:0;text-transform:uppercase}
+p{margin:0}
+/* typography discipline: justified running text, no orphan words, balanced headings */
+.prose p,.cover .pitch,.mission .about,.mission ul:not(.chips) li,.mission .grid > div > p:not(.label),.signal p,.result p{text-align:justify;text-align-last:left;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;orphans:2;widows:2}
+.power p,.venture p,.section-head p{text-wrap:pretty;hyphens:auto;-webkit-hyphens:auto}
+h1,h2,h3,.stat span,.htimeline .w,.htimeline small,.video .vt,.caption{text-wrap:balance}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem}
+.label{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:var(--red);margin-bottom:6px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+.halftone{position:relative;isolation:isolate}
+.halftone::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:radial-gradient(circle at center,rgba(0,0,0,.12) 1.1px,transparent 1.5px);background-size:7px 7px;opacity:.4}
+
+/* ---------- progress bar ---------- */
+.progress{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:100%;z-index:60;background:var(--red);transform:scaleX(0);transform-origin:left;pointer-events:none}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--ink);color:var(--paper);border-bottom:3px solid var(--red)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:.88rem}
+.brand svg{width:32px;height:32px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.nav li a{position:relative;display:block;padding:8px 12px;text-decoration:none;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem;border-radius:3px}
+.nav li a::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav li a:hover::after,.nav li a.active::after{transform:scaleX(1)}
+.nav li a.cta{background:var(--red);color:#fff;font-weight:700}
+.nav li a.cta::after{display:none}
+.nav li a.cta:hover{background:#b91e23}
+
+/* ---------- cover ---------- */
+.cover{background:var(--ink);color:var(--paper);position:relative;overflow:hidden;isolation:isolate}
+.cover::before{content:"";position:absolute;inset:0;z-index:-2;pointer-events:none;
+  background:repeating-conic-gradient(from 0deg at 72% 42%,rgba(255,255,255,.045) 0 2deg,transparent 2deg 9deg)}
+.cover::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at 72% 42%,rgba(58,166,214,.25),transparent 55%),
+             radial-gradient(circle at center,rgba(255,255,255,.07) 1px,transparent 1.5px) 0 0/9px 9px}
+.cover .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(36px,5vw,64px)}
+.cover .copy{position:relative;transform:translateY(calc(var(--sy) * -0.05px))}
+.claws{display:none}
+.issue{display:inline-flex;align-items:center;gap:10px;border:2px solid var(--paper);padding:5px 11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;margin-bottom:22px}
+.issue b{color:var(--gold)}
+.issue .short{display:none}
+.cover h1{font-size:clamp(2.4rem,6.2vw,5.2rem);line-height:.95;text-shadow:4px 4px 0 var(--red)}
+.cover h1 span{display:block}
+.cover .role{text-wrap:balance;margin-top:16px;font-weight:700;font-size:clamp(.9rem,1.7vw,1.08rem);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.cover .quick{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 0;font-size:.74rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#cfc7b8}
+.cover .quick li{display:flex;align-items:center}
+.cover .quick li+li::before{content:"";width:5px;height:5px;background:var(--gold);margin:0 12px;flex:none}
+.cover .pitch{margin-top:16px;max-width:var(--measure);font-size:1rem;line-height:1.6;color:#e7e0cf}
+.cover .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;text-decoration:none;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;border:3px solid var(--line);box-shadow:5px 5px 0 var(--line);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--line)}
+.btn:active{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--line)}
+.btn-red{background:var(--red);color:#fff;border-color:#fff;box-shadow:5px 5px 0 #fff}
+.btn-red:hover{box-shadow:7px 7px 0 #fff}.btn-red:active{box-shadow:3px 3px 0 #fff}
+.btn-ghost{background:transparent;color:var(--paper);border-color:var(--paper);box-shadow:5px 5px 0 var(--paper)}
+.btn-ghost:hover{box-shadow:7px 7px 0 var(--paper)}.btn-ghost:active{box-shadow:3px 3px 0 var(--paper)}
+
+.portrait{position:relative;justify-self:center;width:min(100%,360px);aspect-ratio:4/5;transform:translateY(calc(var(--sy) * 0.08px))}
+.portrait .burst{position:absolute;inset:-12% -14%;z-index:0;color:var(--gold)}
+.portrait .burst svg{transform:rotate(8deg)}
+.portrait .frame{position:relative;z-index:1;width:100%;height:100%;border:5px solid var(--paper);box-shadow:12px 12px 0 var(--red);background:var(--ink-2);overflow:hidden;
+  clip-path:polygon(0 0,100% 0,100% 92%,92% 100%,0 100%)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:contrast(1.06) saturate(1.04)}
+.portrait .fallback{display:none;width:100%;height:100%;place-items:center}
+.portrait.no-img img{display:none}.portrait.no-img .fallback{display:grid}
+.portrait .fallback svg{width:60%;height:auto}
+.caption{position:absolute;z-index:2;left:-10px;bottom:22px;background:var(--paper);color:var(--ink);border:3px solid var(--line);padding:6px 12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.7rem;transform:rotate(-3deg)}
+
+/* ---------- stats band ---------- */
+.stats{background:var(--red);color:#fff;border-block:4px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;background:rgba(0,0,0,.25);background-clip:content-box}
+.stat{background:var(--red);padding:16px 10px;text-align:center;display:grid;align-content:center;gap:6px}
+.stat b{display:block;font-weight:800;font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums;text-shadow:2px 2px 0 var(--line);white-space:nowrap}
+.stat span{display:block;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.6rem;line-height:1.3;opacity:.95}
+
+/* ---------- sections ---------- */
+.section{padding-block:clamp(60px,8vw,100px)}
+.section.alt{background:var(--paper-2)}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,44px)}
+.section-head h2{position:relative;display:block;width:fit-content;max-width:100%;font-size:clamp(1.7rem,4.6vw,3.4rem);color:var(--ink);padding-bottom:14px}
+.section-head h2::after{content:"";position:absolute;left:0;bottom:0;width:72px;height:6px;background:var(--gold)}
+.section-head .eyebrow{display:block;color:var(--red);margin-bottom:10px}
+.section-head p{max-width:40ch;color:var(--muted);font-size:.96rem}
+
+/* origin: kept compact so it reads in one screen on a laptop */
+#origin.section{padding-block:clamp(36px,5vw,52px)}
+#origin .section-head{margin-bottom:20px}
+.origin{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+.origin .prose{font-size:.97rem;line-height:1.6;columns:2;column-gap:44px;column-rule:1px dashed rgba(0,0,0,.25)}
+.origin .prose p{margin-bottom:12px}
+.origin .prose p:last-child{margin-bottom:0}
+.motto{margin:8px 0 0;width:100%;border-left:6px solid var(--gold);background:var(--paper-2);padding:18px 24px;display:grid;gap:8px}
+.motto p{text-align:left}
+.motto cite{text-align:left}
+.motto p{font-size:clamp(1.1rem,2vw,1.4rem);font-weight:800;font-style:italic;line-height:1.3;color:var(--ink);text-transform:uppercase;letter-spacing:.01em}
+.motto cite{font-style:normal;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;color:var(--red)}
+.origin .prose p:first-child::first-letter{font-weight:800;font-size:3.4em;float:left;line-height:.8;margin:6px 10px 0 0;color:var(--red)}
+.origin aside{display:grid;gap:22px}
+.facts .k{font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;color:var(--red)}
+.strip{margin-top:clamp(36px,5vw,56px)}
+.strip .label{margin-bottom:10px}
+.strip .hint{color:var(--muted);font-weight:600;letter-spacing:.08em}
+.htimeline{list-style:none;margin:0;padding:0 0 8px;display:flex;gap:0;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.htimeline li{position:relative;flex:1 1 170px;min-width:170px;padding:14px 14px 0 0;border-top:4px solid var(--line);scroll-snap-align:start}
+.htimeline .role{display:grid;gap:2px}
+.htimeline .role+.role{margin-top:9px;padding-top:9px;border-top:1px dashed rgba(0,0,0,.3)}
+.htimeline .o{display:block;font-size:.76rem;color:var(--text);line-height:1.3}
+.htimeline li::before{content:"";position:absolute;left:0;top:-10px;width:16px;height:16px;background:var(--red);border:3px solid var(--line)}
+.htimeline li.now::before{background:var(--gold)}
+.htimeline li:last-child{padding-right:0;border-image:linear-gradient(90deg,var(--line) 70%,transparent) 1}
+.htimeline .y{display:block;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;color:var(--red);font-variant-numeric:tabular-nums;margin-bottom:4px}
+.htimeline .w{display:block;font-weight:700;line-height:1.25;font-size:.8rem}
+.htimeline small{display:block;color:var(--red);font-weight:600;font-size:.7rem;margin-top:3px;line-height:1.3}
+
+/* powers */
+.powers{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.power{background:var(--paper);border:3px solid var(--line);padding:22px;position:relative;box-shadow:6px 6px 0 var(--line);transition:transform .15s,box-shadow .15s}
+.power:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--line)}
+.power .icon{width:38px;height:38px;color:var(--red);margin-bottom:12px}
+.power h3{font-size:1.05rem;color:var(--ink);margin-bottom:8px;line-height:1.15}
+.power p{color:var(--muted);font-size:.94rem}
+.belt{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.belt .label{margin:0 6px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0}
+.chips li{border:2px solid var(--line);padding:3px 9px;font-weight:600;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;background:var(--paper-2)}
+
+/* missions */
+.mission .goal{border-left:5px solid var(--gold);background:var(--paper-2);padding:10px 14px;display:grid;gap:2px}
+.mission .goal .label{margin:0}
+.mission .goal p{font-weight:700;font-size:1.05rem;line-height:1.4;color:var(--ink)}
+.missions{display:grid;gap:clamp(22px,3vw,36px)}
+.mission{background:var(--paper);border:3px solid var(--line);box-shadow:10px 10px 0 var(--line);display:grid;grid-template-columns:300px 1fr;overflow:hidden;position:relative}
+.mission .art{position:relative;background:var(--ink);color:var(--paper);min-height:300px;display:grid;place-items:center;border-right:3px solid var(--line);isolation:isolate;overflow:hidden}
+.mission .art::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle,rgba(255,255,255,.1) 1px,transparent 1.5px) 0 0/8px 8px}
+.mission .art .tile{position:relative;z-index:1;width:220px;height:220px;background:#fff;border:3px solid var(--line);box-shadow:8px 8px 0 var(--red);display:grid;place-items:center;overflow:hidden;padding:16px}
+.mission .art .tile img{width:100%;height:100%;object-fit:contain}
+.mission .art .tile.quad{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;padding:12px;place-items:center}
+.mission .art .tile.quad img{width:100%;height:100%;object-fit:contain}
+.mission .art .tile.quad .q-txt{font-weight:800;font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;text-align:center;color:var(--ink);line-height:1.2}
+.mission .art.poster .tile{padding:0}
+.mission .art.poster .tile img{object-fit:cover}
+.mission .art .fallback{position:relative;z-index:1;display:none;font-weight:800;font-size:clamp(1.6rem,3.5vw,2.4rem);text-align:center;padding:16px;line-height:1;text-shadow:4px 4px 0 var(--red)}
+.mission .art.no-img .tile{display:none}.mission .art.no-img .fallback{display:block}
+.mission .tag{position:absolute;z-index:2;top:12px;left:12px;background:var(--gold);color:var(--ink);border:3px solid var(--line);padding:4px 10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.66rem}
+.mission .body{padding:clamp(20px,3vw,32px);display:grid;gap:14px;min-width:0}
+.mission h3{font-size:clamp(1.4rem,2.6vw,2rem);color:var(--ink)}
+.mission .meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 18px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;color:var(--muted);padding:12px 0;border-block:1px dashed rgba(0,0,0,.25)}
+.mission .meta span{display:block;min-width:0;line-height:1.4}
+.mission .meta b{display:block;color:var(--red);margin-bottom:3px;font-size:.64rem;letter-spacing:.16em}
+.mission .about{color:var(--muted);font-style:italic;font-size:.97rem}
+.mission .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+.mission ul:not(.chips){margin:0;padding-left:18px;display:grid;gap:6px;font-size:.97rem}
+.result{background:var(--ink);color:var(--paper);border:3px solid var(--line);padding:14px 16px;display:flex;align-items:center;gap:14px;box-shadow:inset 0 0 0 2px var(--gold)}
+.result .pow{font-weight:800;font-size:1rem;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.result p{font-weight:600;font-size:.97rem}
+
+/* videos */
+.videos{display:grid;gap:8px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.video{position:relative;display:block;aspect-ratio:16/9;background:var(--ink);border:3px solid var(--line);overflow:hidden;color:var(--paper);text-decoration:none;box-shadow:4px 4px 0 var(--line)}
+.video img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;transition:transform .25s,opacity .25s}
+.video:hover img{transform:scale(1.04);opacity:1}
+.video .play{position:absolute;left:50%;top:50%;width:52px;height:52px;transform:translate(-50%,-60%);background:var(--red);border:3px solid var(--line);display:grid;place-items:center}
+.video .play::after{content:"";width:0;height:0;border-left:16px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.video .vt{position:absolute;left:0;right:0;bottom:0;padding:8px 10px;background:linear-gradient(transparent,rgba(13,18,38,.95) 40%);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.66rem;line-height:1.3}
+.video.embedded{display:block}
+.video.embedded iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* ventures */
+.ventures{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.venture{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;background:var(--paper);border:3px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:20px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.venture:hover{transform:translate(-2px,-2px);box-shadow:10px 10px 0 var(--line)}
+.venture .logo{width:120px;height:120px;display:grid;place-items:center;background:#fff;border:3px solid var(--line);padding:10px}
+.venture .logo img{max-height:100%;object-fit:contain}
+.venture .logo .mono{font-weight:800;font-size:2rem;color:var(--red);text-shadow:3px 3px 0 var(--line);line-height:1;text-align:center}
+.venture h3{font-size:1.25rem;color:var(--ink);margin-bottom:6px}
+.venture p{color:var(--muted);font-size:.94rem}
+.venture .url{display:inline-block;margin-top:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.7rem;color:var(--red)}
+
+/* signal */
+.signal{background:var(--ink);color:var(--paper);border-top:4px solid var(--red);position:relative;overflow:hidden;isolation:isolate}
+.signal::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(242,182,50,.06) 0 3deg,transparent 3deg 12deg)}
+.signal .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:center;padding-block:clamp(56px,8vw,96px)}
+.signal h2{font-size:clamp(2.2rem,5vw,3.8rem);text-shadow:4px 4px 0 var(--red)}
+.signal p{max-width:48ch;color:#e7e0cf;margin-top:16px;font-size:1.04rem}
+.signal .eyebrow{color:var(--gold)}
+.contact{display:grid;gap:14px}
+.contact a.email{font-weight:700;font-size:clamp(1.05rem,2.3vw,1.4rem);letter-spacing:.02em;color:var(--gold);text-decoration:none;word-break:break-all}
+.contact a.email:hover{text-decoration:underline}
+.socials{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--paper);padding:9px 14px;text-decoration:none;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;transition:background .15s,color .15s}
+.socials a:hover{background:var(--paper);color:var(--ink)}
+.socials svg{width:18px;height:18px}
+footer{background:#070a18;color:#9b9484;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;font-weight:600}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:18px}
+footer a{color:inherit}
+
+/* ---------- scroll reveals (only when JS runs) ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .htimeline.reveal li{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.js .htimeline.reveal.in li{opacity:1;transform:none}
+.js .htimeline.reveal.in li:nth-child(2){transition-delay:.07s}.js .htimeline.reveal.in li:nth-child(3){transition-delay:.14s}.js .htimeline.reveal.in li:nth-child(4){transition-delay:.21s}.js .htimeline.reveal.in li:nth-child(5){transition-delay:.28s}.js .htimeline.reveal.in li:nth-child(6){transition-delay:.35s}.js .htimeline.reveal.in li:nth-child(7){transition-delay:.42s}.js .htimeline.reveal.in li:nth-child(8){transition-delay:.49s}.js .htimeline.reveal.in li:nth-child(9){transition-delay:.56s}
+.js .powers .reveal:nth-child(2){transition-delay:.06s}.js .powers .reveal:nth-child(3){transition-delay:.12s}.js .powers .reveal:nth-child(4){transition-delay:.18s}.js .powers .reveal:nth-child(6){transition-delay:.06s}.js .powers .reveal:nth-child(7){transition-delay:.12s}.js .powers .reveal:nth-child(8){transition-delay:.18s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal,.js .htimeline.reveal li{opacity:1;transform:none}
+  .cover .copy,.portrait{transform:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .cover .wrap{grid-template-columns:1fr;padding-block:32px 40px}
+  .cover .copy,.portrait,.portrait .burst{transform:none}
+  .portrait{width:min(100%,320px);justify-self:center;margin-top:8px}
+  .origin,.signal .wrap{grid-template-columns:1fr}
+  .mission{grid-template-columns:1fr}
+  .mission .art{border-right:0;border-bottom:3px solid var(--line);min-height:240px}
+  .mission .art .tile{width:180px;height:180px}
+  .stats .wrap{grid-template-columns:repeat(3,1fr)}
+  }
+@media (max-width:600px){
+  .nav .wrap{min-height:54px;gap:8px}
+  .nav ul{flex-wrap:nowrap}
+  .nav li a{padding:7px 8px;font-size:.64rem;letter-spacing:.08em}
+  .brand{font-size:.78rem;gap:8px}.brand svg{width:26px;height:26px}
+  .issue{font-size:.64rem;padding:5px 9px;gap:8px}
+  .issue .long{display:none}.issue .short{display:inline}
+  .cover .quick{flex-direction:column;gap:5px;font-size:.68rem}
+  .cover .quick li::before{content:"";width:5px;height:5px;background:var(--gold);margin:0 10px 0 0;flex:none}
+  .cover .quick li+li::before{margin:0 10px 0 0}
+  .cover h1{font-size:clamp(2.2rem,11vw,3rem)}
+  .cover .role{text-wrap:balance;font-size:.82rem}
+  .prose p,.cover .pitch,.mission .about,.mission ul:not(.chips) li,.mission .grid > div > p:not(.label),.signal p,.result p{text-align:left}
+  .result{flex-direction:column;align-items:flex-start;gap:6px}
+  .mission .grid{grid-template-columns:1fr}
+  .mission .meta{grid-template-columns:1fr;gap:8px}
+  .origin .prose{columns:1}
+  .nav ul li:not(.keep){display:none}
+  .cover h1{text-shadow:3px 3px 0 var(--red)}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:last-child{grid-column:1/-1}
+  .venture{grid-template-columns:1fr}
+  .venture .logo{width:100px;height:100px}
+}
+
+[id]{scroll-margin-top:84px}
+@media (max-width:1100px){.nav li a{padding:8px 8px;letter-spacing:.08em}.ask-btn kbd{display:none}}
+@media (max-width:900px){.nav ul li:not(.keep){display:none}}
+/* ---------- ask button ---------- */
+.ask-btn{display:flex;align-items:center;gap:8px;background:transparent;border:2px solid rgba(243,236,220,.35);color:var(--paper);font:600 .74rem/1 var(--font);letter-spacing:.1em;text-transform:uppercase;padding:7px 10px;border-radius:3px;cursor:pointer;transition:border-color .2s,background .2s}
+.ask-btn:hover{border-color:var(--gold);background:rgba(242,182,50,.08)}
+.ask-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round}
+.ask-btn kbd,.ask kbd,footer kbd{font:700 .62rem/1 var(--font);border:1px solid currentColor;border-radius:3px;padding:3px 5px;opacity:.7}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- flywheel ---------- */
+.fly{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(24px,5vw,64px);align-items:center}
+.fly-wheel svg{width:100%;max-width:440px;display:block;margin:auto;overflow:visible}
+.fly-seg{cursor:pointer;outline:none}
+.fly-seg path.arc{fill:var(--paper);stroke:var(--line);stroke-width:3;transition:fill .3s,transform .3s}
+.fly-seg text{font:800 13px var(--font);letter-spacing:.14em;text-transform:uppercase;fill:var(--ink);pointer-events:none;transition:fill .3s}
+.fly-seg .n{font-size:10px;letter-spacing:.1em;fill:var(--muted)}
+.fly-seg:hover path.arc{fill:var(--paper-2)}
+.fly-seg.on path.arc{fill:var(--red)}
+.fly-seg.on text{fill:#fff}
+.fly-seg:focus-visible path.arc{stroke:var(--gold);stroke-width:5}
+.fly-ring .chev{fill:var(--gold);stroke:var(--line);stroke-width:2}
+.fly-ring{transform-origin:180px 180px;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.fly-hub{fill:var(--ink);stroke:var(--line);stroke-width:3}
+.fly-hub-k{font:700 10px var(--font);letter-spacing:.2em;text-transform:uppercase;fill:var(--gold)}
+.fly-hub-v{font:800 24px var(--font);text-transform:uppercase;fill:var(--paper)}
+.fly-panel{background:var(--paper);border:3px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:clamp(20px,3vw,30px);display:grid;gap:10px;min-width:0}
+.fly-title{font-size:clamp(1.6rem,3vw,2.2rem);color:var(--ink)}
+.fly-line{font-weight:600;font-size:1.02rem;color:var(--text)}
+.fly-proof{list-style:none;margin:4px 0 8px;padding:0;display:grid;gap:8px}
+.fly-proof li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline;border-bottom:1px dashed rgba(0,0,0,.25);padding-bottom:8px}
+.fly-proof b{font-weight:800;font-size:1.25rem;color:var(--red);font-variant-numeric:tabular-nums;white-space:nowrap}
+.fly-proof span{font-size:.92rem;color:var(--muted)}
+.fly-where{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.fly-where a{border:2px solid var(--line);padding:3px 9px;font-weight:700;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;background:var(--paper-2);transition:background .15s}
+.fly-where a:hover{background:var(--gold)}
+.fly-show{justify-self:start;font:inherit;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;cursor:pointer}
+.fly-panel.swap > *{animation:flyIn .45s cubic-bezier(.2,.7,.2,1) both}
+.fly-panel.swap > *:nth-child(2){animation-delay:.04s}.fly-panel.swap > *:nth-child(3){animation-delay:.08s}.fly-panel.swap > *:nth-child(4){animation-delay:.12s}
+@keyframes flyIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ---------- mission filters ---------- */
+.filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-8px 0 26px}
+.filters .label{margin:0 6px 0 0}
+.fchip{font:700 .72rem/1 var(--font);letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:8px 11px;cursor:pointer;box-shadow:3px 3px 0 var(--line);transition:transform .12s,box-shadow .12s,background .15s}
+.fchip b{font-weight:800;color:var(--red);margin-left:4px}
+.fchip:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
+.fchip.on{background:var(--ink);color:var(--paper)}
+.fchip.on b{color:var(--gold)}
+.stage-chip{background:var(--red);color:#fff}
+.stage-chip.on{background:var(--red);color:#fff}
+.mission[hidden]{display:none!important}
+.missions-empty{font-weight:600;color:var(--muted)}
+.mission.flash,.role.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%,35%{box-shadow:0 0 0 6px var(--gold),10px 10px 0 var(--line)}100%{box-shadow:0 0 0 0 transparent,10px 10px 0 var(--line)}}
+.role.flash{animation-name:flashRole}
+@keyframes flashRole{0%,35%{background:rgba(242,182,50,.45)}100%{background:transparent}}
+
+/* ---------- clickable timeline ---------- */
+.htimeline .role[data-go]{cursor:pointer;border-radius:2px;transition:background .15s}
+.htimeline .role[data-go]:hover .w,.htimeline .role[data-go]:focus-visible .w{color:var(--red);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.htimeline .role[data-go]::after{content:"View mission →";display:block;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);opacity:0;transition:opacity .15s;margin-top:3px}
+.htimeline .role[data-go]:hover::after,.htimeline .role[data-go]:focus-visible::after{opacity:1}
+
+/* ---------- ask palette ---------- */
+.ask{position:fixed;inset:0;z-index:100;display:grid;justify-items:center;align-items:start;padding:12vh 16px 16px}
+.ask[hidden]{display:none}
+.ask-backdrop{position:absolute;inset:0;background:rgba(13,18,38,.72);backdrop-filter:blur(3px)}
+.ask-box{position:relative;width:min(640px,100%);background:var(--paper);border:3px solid var(--line);box-shadow:10px 10px 0 var(--red);display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;max-height:76vh;overflow:hidden;animation:askIn .22s cubic-bezier(.2,.7,.2,1)}
+@keyframes askIn{from{opacity:0;transform:translateY(-10px) scale(.98)}to{opacity:1;transform:none}}
+.ask-head{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:3px solid var(--line)}
+.ask-head svg{width:20px;height:20px;fill:none;stroke:var(--red);stroke-width:2.6;stroke-linecap:round;flex:none}
+.ask-head input{flex:1;min-width:0;border:0;background:transparent;font:600 1.05rem var(--font);color:var(--ink);outline:none}
+.ask-head input::placeholder{color:var(--muted);font-weight:500}
+.ask-head kbd{color:var(--muted)}
+.ask-try{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:10px 16px 0}
+.ask-try span{font:700 .64rem var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-right:4px}
+.ask-try button{font:700 .68rem/1 var(--font);letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--line);background:var(--paper-2);padding:6px 9px;cursor:pointer}
+.ask-try button:hover{background:var(--gold)}
+.ask-list{list-style:none;margin:0;padding:8px;overflow:auto;display:grid;align-content:start;gap:4px;min-height:0}
+.ask-list li{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:10px 12px;border:2px solid transparent;cursor:pointer}
+.ask-list li[aria-selected="true"]{border-color:var(--line);background:var(--paper-2);box-shadow:4px 4px 0 var(--line)}
+.ask-list .t{grid-column:2;font-weight:800;text-transform:uppercase;font-size:.86rem;color:var(--ink)}
+.ask-list .k{grid-row:1/3;align-self:start;font:700 .58rem var(--font);letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--ink);padding:4px 6px;margin-top:1px}
+.ask-list .k.k-mission{background:var(--red)}.ask-list .k.k-skill{background:#3a6b4f}.ask-list .k.k-timeline{background:#5b4a8a}
+.ask-list .s{grid-column:2;font-size:.84rem;color:var(--muted);line-height:1.4}
+.ask-list mark{background:rgba(242,182,50,.55);color:inherit;padding:0 1px}
+.ask-list .none{display:block;cursor:default;color:var(--muted);font-weight:600}
+.ask-foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0;padding:10px 16px;border-top:2px dashed rgba(0,0,0,.25);font:600 .66rem var(--font);letter-spacing:.06em;color:var(--muted)}
+
+@media (max-width:900px){
+  .fly{grid-template-columns:1fr}
+  .fly-wheel svg{max-width:340px}
+}
+@media (max-width:600px){
+  .ask-btn kbd,.ask-btn span{display:none}
+  .ask-btn{padding:6px 8px}
+  .ask{padding-top:8vh}
+  .ask-foot span:first-child{display:none}
+  .fly-proof li{grid-template-columns:1fr;gap:2px}
+}
+@media (prefers-reduced-motion:reduce){
+  .fly-ring{transition:none}
+  .mission.flash,.role.flash,.ask-box,.fly-panel.swap > *{animation:none}
+}
+
+/* ---------- breathing room ---------- */
+.section{padding-block:clamp(80px,10vw,136px)}
+#origin.section{padding-block:clamp(64px,8vw,104px)}
+.section-head{margin-bottom:clamp(36px,5vw,60px)}
+.missions{gap:clamp(36px,5vw,64px)}
+.powers{gap:22px}
+.power{padding:28px 26px}
+.origin .prose{font-size:1rem;line-height:1.8;column-gap:56px}
+.origin .prose p{margin-bottom:18px}
+.origin .prose p.lead{column-span:all;font-size:clamp(1.5rem,3.2vw,2.3rem);font-weight:800;line-height:1.2;letter-spacing:-.01em;color:var(--ink);text-align:left;text-align-last:left;margin-bottom:26px}
+.origin .prose p.lead::first-letter{all:unset}
+.origin .prose p:nth-of-type(2)::first-letter{font-weight:800;font-size:3.4em;float:left;line-height:.8;margin:6px 10px 0 0;color:var(--red)}
+.prose strong,.more-in li strong{color:var(--ink);font-weight:800}
+
+/* ---------- KPI-first mission cards ---------- */
+.mission .body{gap:18px;align-content:start}
+.kpis{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:18px 26px}
+.kpis li{display:grid;gap:4px;align-content:start;padding-left:14px;border-left:4px solid var(--gold)}
+.kpis b{font-weight:800;font-size:clamp(1.7rem,3vw,2.35rem);line-height:1;letter-spacing:-.02em;color:var(--red);font-variant-numeric:tabular-nums}
+.kpis span{font-weight:600;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:1.35}
+.mission ul.kpis{padding:0;gap:18px 26px;font-size:inherit}
+.mission ul.kpis li{text-align:left;text-align-last:left;hyphens:manual;min-width:0}
+.mission ul.kpis b{white-space:nowrap}
+/* four results (hospitality) sit 2 x 2 instead of being squeezed into one row */
+.mission ul.kpis:has(> li:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr));max-width:560px}
+.more-btn{justify-self:start;display:inline-flex;align-items:center;gap:10px;margin-top:6px;font:700 .74rem/1 var(--font);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:transparent;border:2px solid var(--line);padding:10px 14px;cursor:pointer;box-shadow:3px 3px 0 var(--line);transition:transform .12s,box-shadow .12s,background .15s}
+.more-btn:hover{background:var(--paper-2);transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--line)}
+.more-btn i{width:10px;height:10px;position:relative}
+.more-btn i::before,.more-btn i::after{content:"";position:absolute;left:0;top:4px;width:10px;height:2px;background:currentColor;transition:transform .25s}
+.more-btn i::after{transform:rotate(90deg)}
+.mission.open .more-btn i::after{transform:rotate(0)}
+.more{display:grid;grid-template-rows:1fr;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1)}
+.more-in{min-height:0;overflow:hidden;display:grid;gap:18px}
+.js .mission:not(.open) .more{grid-template-rows:0fr}
+.js .mission:not(.open) .more-in{visibility:hidden;transition:visibility 0s .45s}
+.mission.open .more-in{padding-top:6px}
+.expand-all{margin-left:auto;font:700 .7rem/1 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:none;border:0;border-bottom:2px solid currentColor;padding:4px 0;cursor:pointer}
+.expand-all:hover,.expand-all[aria-pressed="true"]{color:var(--red)}
+@media (max-width:600px){.kpis{grid-template-columns:1fr 1fr}.expand-all{margin-left:0}}
+@media (prefers-reduced-motion:reduce){.more{transition:none}}
+
+/* ---------- decluttered hero ---------- */
+.issue .status{display:inline-flex;align-items:center;gap:8px;color:var(--paper)}
+.issue .status i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.6)}70%{box-shadow:0 0 0 9px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.cover .tagline{margin-top:22px;max-width:30ch;font-size:clamp(1.2rem,2.2vw,1.55rem);font-weight:600;line-height:1.35;color:var(--paper);text-wrap:balance}
+.cover .proven{margin-top:16px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;font-weight:700;font-size:clamp(1rem,1.8vw,1.2rem)}
+.cover .proven .k{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#b9b1a2}
+.cover .rot{color:var(--gold);border-bottom:3px solid var(--red);padding-bottom:2px;min-height:1.3em}
+.cover .rot::after{content:"";display:inline-block;width:2px;height:1em;margin-left:3px;vertical-align:-2px;background:var(--gold);animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{opacity:0}}
+.cover .actions{align-items:center;margin-top:30px}
+.quiet-link{font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#cfc7b8;text-decoration:none;border-bottom:2px solid transparent;padding:4px 0;margin-left:6px}
+.quiet-link:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.good-to-know{list-style:none;margin:4px 0 6px;padding:0;display:grid;gap:8px}
+.good-to-know li{position:relative;padding-left:16px;font-size:.92rem;color:#e7e0cf}
+.good-to-know li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;background:var(--gold)}
+.good-to-know b{color:var(--gold)}
+@media (prefers-reduced-motion:reduce){.issue .status i,.cover .rot::after{animation:none}}
+
+.socials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;max-width:340px}
+.socials li{display:flex}
+.socials a{flex:1;display:flex;justify-content:center;padding:9px 11px;letter-spacing:.1em}
+
+/* ---------- flywheel turns itself ---------- */
+@keyframes flyTimer{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+.fly-track{fill:none;stroke:var(--line);stroke-width:5;opacity:.18}
+.fly-timer{fill:none;stroke:var(--gold);stroke-width:5;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;transform:rotate(-90deg);transform-origin:180px 180px}
+#flywheel.tick .fly-timer{animation:flyTimer var(--fly-step,4500ms) linear infinite}
+.fly-toggle{display:flex;align-items:center;gap:8px;margin:14px auto 0;background:none;border:2px solid var(--line);color:var(--ink);font:700 .7rem var(--font);letter-spacing:.14em;text-transform:uppercase;padding:7px 14px;cursor:pointer;transition:background .15s}
+.fly-toggle:hover{background:var(--gold)}
+.fly-toggle:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.fly-toggle .ico{width:10px;height:10px;border-left:3px solid currentColor;border-right:3px solid currentColor}
+#flywheel.paused .fly-toggle .ico{border:0;width:0;height:0;border-top:6px solid transparent;border-bottom:6px solid transparent;border-left:10px solid currentColor}
+@media (prefers-reduced-motion:reduce){#flywheel.tick .fly-timer{animation:none}}
+
+/* ---------- mission deck ---------- */
+.deck-rail{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;margin:0 0 22px;scroll-margin-top:84px}
+.deck-tab{display:grid;justify-items:start;gap:6px;text-align:left;min-width:0;background:var(--paper);color:var(--ink);border:2px solid var(--line);padding:8px 8px 10px;cursor:pointer;font:inherit;position:relative;box-shadow:3px 3px 0 var(--line);transition:transform .15s,box-shadow .15s,background .2s,color .2s}
+.deck-tab:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--line)}
+.deck-tab:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.deck-tab .dn{font-weight:800;font-size:.62rem;letter-spacing:.14em;color:var(--red);font-variant-numeric:tabular-nums}
+.deck-tab .dl{width:100%;aspect-ratio:16/10;max-width:100%;background:#fff;border:2px solid var(--line);display:grid;place-items:center;overflow:hidden;padding:5px}
+.deck-tab .dl img{width:100%;height:100%;object-fit:contain}
+.deck-tab.poster .dl{padding:0}.deck-tab.poster .dl img{object-fit:cover}
+.deck-tab .dt{font-weight:700;font-size:.6rem;letter-spacing:.07em;text-transform:uppercase;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.5em}
+.deck-tab.on{background:var(--ink);color:var(--paper);box-shadow:5px 5px 0 var(--red);transform:translate(-2px,-2px)}
+.deck-tab.on .dn{color:var(--gold)}
+.deck-tab.on::after{content:"";position:absolute;left:50%;bottom:-10px;width:14px;height:14px;background:var(--ink);transform:translateX(-50%) rotate(45deg);border-right:2px solid var(--line);border-bottom:2px solid var(--line)}
+.missions.deck{position:relative;display:block}
+.missions.deck > .mission:not(.cur):not(.leaving){display:none}
+.missions.deck > .mission.leaving{position:absolute;inset:0 0 auto 0;z-index:0;pointer-events:none}
+.missions.deck > .mission.cur{z-index:1}
+.mission.in-r{animation:deckInR .55s cubic-bezier(.2,.7,.2,1) both}
+.mission.in-l{animation:deckInL .55s cubic-bezier(.2,.7,.2,1) both}
+.mission.out-l{animation:deckOutL .45s cubic-bezier(.5,0,.75,0) both}
+.mission.out-r{animation:deckOutR .45s cubic-bezier(.5,0,.75,0) both}
+.mission.in-r .art .tile,.mission.in-l .art .tile{animation:deckTile .6s .12s cubic-bezier(.2,.9,.3,1.25) both}
+.mission.in-r .kpis li,.mission.in-l .kpis li{animation:deckUp .45s .1s cubic-bezier(.2,.7,.2,1) both}
+.mission.in-r .kpis li:nth-child(2),.mission.in-l .kpis li:nth-child(2){animation-delay:.18s}
+.mission.in-r .kpis li:nth-child(3),.mission.in-l .kpis li:nth-child(3){animation-delay:.26s}
+.mission.in-r .kpis li:nth-child(4),.mission.in-l .kpis li:nth-child(4){animation-delay:.34s}
+@keyframes deckInR{from{opacity:0;transform:translateX(70px) rotate(.8deg)}to{opacity:1;transform:none}}
+@keyframes deckInL{from{opacity:0;transform:translateX(-70px) rotate(-.8deg)}to{opacity:1;transform:none}}
+@keyframes deckOutL{to{opacity:0;transform:translateX(-90px) rotate(-1.5deg) scale(.97)}}
+@keyframes deckOutR{to{opacity:0;transform:translateX(90px) rotate(1.5deg) scale(.97)}}
+@keyframes deckTile{from{opacity:0;transform:scale(.7) rotate(-6deg)}to{opacity:1;transform:none}}
+@keyframes deckUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.deck-bar{display:flex;align-items:center;gap:14px;margin-top:26px}
+.deck-bar button{font:inherit;cursor:pointer;border:3px solid var(--line);transition:transform .15s,box-shadow .15s,background .15s}
+.deck-bar button:disabled{opacity:.4;cursor:default}
+.deck-bar .deck-prev{background:var(--paper);color:var(--ink);font-weight:700;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;padding:12px 16px;box-shadow:4px 4px 0 var(--line)}
+.deck-count{font-weight:700;font-size:.8rem;letter-spacing:.14em;color:var(--muted);font-variant-numeric:tabular-nums}
+.deck-count b{color:var(--ink);font-size:1.15rem}
+.deck-next{margin-left:auto;display:grid;grid-template-columns:auto auto;column-gap:16px;align-items:center;text-align:left;background:var(--red);color:#fff;padding:10px 18px;box-shadow:5px 5px 0 var(--line)}
+.deck-next .nx-k{grid-row:1;font-weight:700;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.deck-next .nx-t{grid-row:2;font-weight:800;font-size:clamp(.95rem,2vw,1.15rem);text-transform:uppercase;letter-spacing:.04em}
+.deck-next .nx-a{grid-row:1/3;grid-column:2;font-size:1.5rem;font-weight:800;transition:transform .2s}
+.deck-prev:hover,.deck-next:hover{transform:translate(-2px,-2px)}
+.deck-next:hover .nx-a{transform:translateX(4px)}
+.deck-prev:focus-visible,.deck-next:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media (max-width:1000px){
+  .deck-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 4px 16px;margin-inline:-4px;scrollbar-width:thin}
+  .deck-tab{flex:0 0 118px;scroll-snap-align:center}
+}
+@media (max-width:600px){
+  .deck-bar{flex-wrap:wrap;gap:12px}
+  .deck-next{order:-1;flex:1 1 100%;margin-left:0;grid-template-columns:1fr auto}
+  .deck-count{margin-left:auto}
+}
+@media (prefers-reduced-motion:reduce){.mission.in-r,.mission.in-l,.mission.out-l,.mission.out-r,.mission.in-r .art .tile,.mission.in-l .art .tile,.mission.in-r .kpis li,.mission.in-l .kpis li{animation:none}}
+
+/* flywheel panel changes like a carousel */
+.fly-panel{overflow:hidden;align-content:start}
+.fly-panel.swap > *{animation:flySlide .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes flySlide{from{opacity:0;transform:translateX(56px)}to{opacity:1;transform:none}}
+.fly-seg path.arc{transition:fill .45s}
+
+/* hidden always means hidden (the filters and the mission deck rely on it); no scroll jumps when missions swap */
+[hidden]{display:none!important}
+html{overflow-anchor:none}
+@media (max-width:600px){.cover .proven{display:grid;gap:4px;justify-items:start}.cover .rot{white-space:nowrap}}
+
+/* ---------- career map ---------- */
+.cmap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;position:relative;margin-top:6px}
+.cmap::before{content:"";position:absolute;left:0;right:0;top:46px;height:4px;background:var(--line);z-index:0}
+.cmap-ch{grid-row:1;position:relative;z-index:1;display:grid;gap:4px;align-content:start;text-align:left;font:inherit;color:var(--ink);background:var(--paper);border:3px solid var(--line);box-shadow:5px 5px 0 var(--line);padding:16px 16px 14px;cursor:pointer;min-width:0;transition:transform .15s,box-shadow .15s,background .2s,color .2s}
+.cmap > .cmap-ch:nth-of-type(1){grid-column:1}.cmap > .cmap-ch:nth-of-type(2){grid-column:2}.cmap > .cmap-ch:nth-of-type(3){grid-column:3}.cmap > .cmap-ch:nth-of-type(4){grid-column:4}
+.cmap-ch:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--line)}
+.cmap-ch:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.cmap-ch .cn{font-weight:800;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--red);display:flex;justify-content:space-between;gap:8px}
+.cmap-ch .cn i{font-style:normal;color:var(--muted);font-variant-numeric:tabular-nums}
+.cmap-ch .ct{font-weight:800;font-size:clamp(1rem,1.6vw,1.2rem);text-transform:uppercase;letter-spacing:.02em;line-height:1.15;margin-top:4px}
+.cmap-ch .cbig{font-weight:800;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1;color:var(--red);margin-top:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cmap-ch .ccap{font-size:.78rem;font-weight:600;color:var(--muted);line-height:1.3;text-wrap:balance}
+.cmap-ch .cmeta{margin-top:10px;padding-top:9px;border-top:1px dashed rgba(0,0,0,.3);font-weight:700;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text)}
+.cmap-ch[aria-selected="true"]{background:var(--ink);color:var(--paper);box-shadow:6px 6px 0 var(--red);transform:translate(-2px,-2px)}
+.cmap-ch[aria-selected="true"] .cn i,.cmap-ch[aria-selected="true"] .ccap,.cmap-ch[aria-selected="true"] .cmeta{color:#cfc7b8}
+.cmap-ch[aria-selected="true"] .cbig{color:var(--gold)}
+.cmap-ch[aria-selected="true"] .cmeta{border-top-color:rgba(255,255,255,.25)}
+.cmap.on .cmap-ch[aria-selected="true"]::after{content:"";position:absolute;left:50%;bottom:-12px;width:18px;height:18px;background:var(--ink);border-right:3px solid var(--line);border-bottom:3px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+.cmap-panel{grid-row:2;grid-column:1/-1;background:var(--paper);border:3px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:clamp(18px,2.6vw,28px);margin-top:8px;display:grid;gap:18px;min-width:0;overflow:hidden}
+.cmap:not(.on) .cmap-panel{grid-row:auto}
+.cmap-panel.swap > *{animation:flySlide .5s cubic-bezier(.2,.7,.2,1) both}
+.cmap-panel.swap > *:nth-child(2){animation-delay:.06s}
+.cmap-intro{font-size:1.02rem;color:var(--text);max-width:68ch;text-align:left}
+.cmap-intro b{color:var(--ink);text-transform:uppercase;letter-spacing:.04em}
+.cmap .htimeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:14px;overflow:visible;padding:0}
+.cmap .htimeline li{min-width:0;flex:none;border:2px solid var(--line);border-top:5px solid var(--red);background:var(--paper-2);padding:14px 14px 14px;scroll-snap-align:none;border-image:none}
+.cmap .htimeline li::before{display:none}
+.cmap .htimeline li.now{border-top-color:var(--gold)}
+.cmap .htimeline li:last-child{padding-right:14px;border-image:none}
+.cmap .htimeline .w{font-size:.9rem}
+.cmap .htimeline .o{font-size:.8rem}
+.cmap .htimeline small{font-size:.8rem;font-weight:700;margin-top:6px}
+.cmap .htimeline .role[data-go]::after{opacity:1;color:var(--red);margin-top:8px;font-size:.64rem}
+.cmap .htimeline .role[data-go]:hover::after{text-decoration:underline}
+@media (max-width:760px){
+  .cmap{grid-template-columns:minmax(0,1fr);gap:12px}
+  .cmap::before{left:26px;right:auto;top:0;bottom:0;width:4px;height:auto}
+  .cmap > .cmap-ch:nth-of-type(n),.cmap-panel{grid-row:auto;grid-column:1}
+  .cmap-ch{grid-template-columns:minmax(0,1fr) auto;column-gap:14px}
+  .cmap-ch .cn,.cmap-ch .ct,.cmap-ch .ccap,.cmap-ch .cmeta{grid-column:1}
+  .cmap-ch .cbig{grid-column:2;grid-row:2/4;align-self:center;margin-top:0;font-size:1.8rem}
+  .cmap-ch .cn{grid-row:1}.cmap-ch .ct{grid-row:2}.cmap-ch .ccap{grid-row:3}.cmap-ch .cmeta{grid-row:4}
+  .cmap-ch .cbig{grid-row:1/4}
+  .cmap.on .cmap-ch[aria-selected="true"]::after{left:26px}
+  .cmap-panel{margin-top:4px}
+  .cmap .htimeline{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.cmap-panel.swap > *{animation:none}}
+@media (min-width:1001px){.cmap .htimeline[data-n="5"]{grid-template-columns:repeat(5,minmax(0,1fr))}.cmap .htimeline[data-n="4"]{grid-template-columns:repeat(4,minmax(0,1fr))}.cmap .htimeline[data-n="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}.cmap .htimeline[data-n="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:761px) and (max-width:1000px){.cmap .htimeline:not([data-n="3"]){grid-template-columns:repeat(2,minmax(0,1fr))}.cmap .htimeline[data-n="5"] li:last-child{grid-column:1/-1}.cmap .htimeline[data-n="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}}
+</style>
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Adeoluwa Adesunloye, home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 56 14v18c0 14-10 24-24 28C18 56 8 46 8 32V14z" fill="#d7262c" stroke="#f3ecdc" stroke-width="3"/><path d="M26 44l6-24 6 24M28 36h8" fill="none" stroke="#f3ecdc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Adeoluwa</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#origin">About</a></li>
+        <li><a href="#powers">Skills</a></li>
+        <li><a href="#flywheel">Flywheel</a></li>
+        <li class="keep"><a href="#missions">Missions</a></li>
+        <li><a href="#ventures">Ventures</a></li>
+        <li class="keep"><button type="button" class="ask-btn" data-open-ask aria-label="Ask the portfolio (Ctrl+K)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><span>Ask</span><kbd>⌘K</kbd></button></li>
+        <li class="keep"><a href="#signal" class="cta">Hire me</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= COVER ================= -->
+<section class="cover" aria-labelledby="name">
+  <div class="wrap">
+    <div class="copy">
+      <div class="issue"><b>Issue #1</b> <span class="status"><i aria-hidden="true"></i>Available for new missions</span></div>
+      <h1 id="name"><span>Adeoluwa</span><span>Adesunloye</span></h1>
+      <p class="role">Growth Marketing, Business Development &amp;&nbsp;Sales</p>
+      <p class="tagline">I build businesses from the ground up: find the customers, close the deal, keep them coming back.</p>
+      <p class="proven"><span class="k">Proven in</span> <span class="rot" aria-hidden="true">SaaS startups</span><span class="sr">SaaS startups, hotels and restaurants, sold-out events, charities and marketplaces</span></p>
+      <div class="actions">
+        <a class="btn btn-red" href="#missions">See the missions</a>
+        <a class="btn btn-ghost" href="#signal">Let's talk</a>
+        <a class="quiet-link" href="https://www.linkedin.com/in/adeoluwa-adesunloye/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="portrait" id="portrait">
+      <div class="burst" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><polygon fill="currentColor" opacity=".9" points="100,0 112,62 160,22 128,76 200,100 128,124 160,178 112,138 100,200 88,138 40,178 72,124 0,100 72,76 40,22 88,62"/></svg>
+      </div>
+      <div class="frame">
+        <img src="assets/portrait.jpg" alt="Adeoluwa Adesunloye in a tan jacket, smiling" onerror="this.closest('.portrait').classList.add('no-img')">
+        <div class="fallback" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M32 4 56 14v18c0 14-10 24-24 28C18 56 8 46 8 32V14z" fill="#d7262c" stroke="#f3ecdc" stroke-width="2"/><path d="M26 44l6-24 6 24M28 36h8" fill="none" stroke="#f3ecdc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="caption">Lagos → London → Greece</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POWER LEVELS ================= -->
+<section class="stats" aria-label="Headline results">
+  <div class="wrap">
+    <div class="stat"><b>947</b><span>Vendors signed door to door</span></div>
+    <div class="stat"><b>21,323</b><span>App users in 7 months</span></div>
+    <div class="stat"><b>31,500</b><span>Event attendees</span></div>
+    <div class="stat"><b>Sold out</b><span>Prinvest 2022 conference</span></div>
+    <div class="stat"><b>+30%</b><span>Market share, UK charity</span></div>
+  </div>
+</section>
+
+<!-- ================= ORIGIN ================= -->
+<section class="section halftone" id="origin" aria-labelledby="origin-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Origin story</p>
+        <h2 id="origin-h">No cape, just footwork</h2>
+      </div>
+      <p>The short version of how I got here, and what I'm looking for next.</p>
+    </div>
+    <div class="origin">
+      <div class="prose reveal">
+        <p class="lead">I started in Lagos, on foot.</p>
+        <p>My first jobs were not marketing jobs so much as building jobs: two marketplace apps that existed on paper and needed merchants before they could have a single customer. So I mapped every business in a district on Google Maps, split the map into territories, and walked them. I pitched, I signed, I onboarded, and I went back when the first orders came in. That taught me the thing I still believe: a strategy is only as good as the number of doors it gets you through, and a sale is only finished when the customer comes back.</p>
+        <p>Six-plus years later I have run the whole flywheel more than once, from zero. At 201Stores and CoupinApp I generated the leads, closed the merchants, grew the user base and fixed what users complained about, which cut churn by <strong>60%</strong>. At Prinvest 2022 I sold out a national property conference as sales lead, one speaker and one exhibitor at a time. At New Vision Hospitality, three restaurants and a bar, a social and PR push lifted revenue by <strong>35%</strong> and a rebuilt booking journey lifted direct bookings by <strong>30%</strong>.</p>
+        <p>Around those roles I deliberately worked the other side of the counter: front of house at Bar Enclave in Lagos, then night reception at Beds and Bars and Frasers Hospitality in London, running Opera Cloud, night audits and Booking.com enquiries. That was the point of the whole mix: SaaS marketplaces, trade, education, events, hospitality and charity, each one chosen so I would understand a different market from the inside and could turn what its customers actually do into insight for the next one. At Source AZ I built the sales pipeline and the website from nothing as Business Development Manager and beat the sales targets by <strong>20%</strong>. At EkoHacks, a developer education startup, I took the product from concept to its first <strong>30</strong> paying customers. In between I took a Master's in Strategic Marketing Management at the University of Greenwich and won the GreHacks challenge with Ambitious About Autism.</p>
+        <p>Today I run Gleamcave, a marketing consultancy I took from an idea to a trading business, where that cross-industry read on customer behaviour is the product. I'm looking for a full-time growth, business development or marketing role where the targets are real and the product deserves to be found. I don't stop at awareness. Give me the lead list and I'll give you the conversions and the repeat customers. I work well in a team, I'm comfortable with a quota, and I don't mind the phone.</p>
+      </div>
+      <blockquote class="motto reveal"><p>“Know thyself. Know the customer. Innovate.”</p><cite>Beth Comstock · the line I work by</cite></blockquote>
+    </div>
+    <div class="strip">
+      <p class="label">Career map <span class="hint">· four chapters, 2012 to now</span></p>
+      <div class="cmap reveal">
+        <button type="button" class="cmap-ch" id="ch-01" aria-selected="true" aria-expanded="true" aria-controls="chp-01">
+          <span class="cn">Chapter 01 <i>2012–2019</i></span>
+          <span class="ct">Lagos, on foot</span>
+          <span class="cbig">31,500</span>
+          <span class="ccap">event attendees at KonamiiLagos</span>
+          <span class="cmeta">Lagos · 8 roles</span>
+        </button>
+        <div class="cmap-panel" id="chp-01" role="region" aria-labelledby="ch-01">
+          <p class="cmap-intro"><b>Lagos, on foot.</b> Field research, events and my first marketing jobs, learned one door at a time.</p>
+          <ol class="htimeline" data-n="5">
+            <li><span class="y">2012–2017</span><div class="role"><span class="w">BSc Geography &amp; Planning</span><span class="o">University of Lagos</span></div><div class="role"><span class="w">Marketing &amp; Events Executive</span><span class="o">Campusheat HQ</span></div></li>
+            <li><span class="y">2013–2016</span><div class="role"><span class="w">Data Collector</span><span class="o">Residential Auctions Company, Lagos</span><small>B2B field data collection</small></div><div class="role"><span class="w">Research &amp; Data Intern</span><span class="o">Auricle Services, Lagos</span><small>SPSS analysis · led a 5-person field team</small></div></li>
+            <li><span class="y">2013–2018</span><div class="role" data-go="konamii" tabindex="0" role="link"><span class="w">Assistant VP, Media &amp; Publicity</span><span class="o">KonamiiLagos (volunteer)</span><small>31,500 attendees over 5 years</small></div></li>
+            <li><span class="y">2017–2018</span><div class="role"><span class="w">Marketing &amp; Business Development Officer</span><span class="o">Exotiquecakes, Lagos</span><small>Social media &amp; brand management</small></div><div class="role"><span class="w">Marketing Communications Manager</span><span class="o">PhoenixNest Media (remote)</span><small>Strategy development &amp; brand management</small></div></li>
+            <li><span class="y">2018–2019</span><div class="role"><span class="w">BD &amp; Marketing Consultant Trainee</span><span class="o">Adebola Sobanjo &amp; Co</span><small>Five consulting contracts won</small></div></li>
+          </ol>
+        </div>
+        <button type="button" class="cmap-ch" id="ch-02" aria-selected="false" aria-expanded="false" aria-controls="chp-02">
+          <span class="cn">Chapter 02 <i>2019–2022</i></span>
+          <span class="ct">Startup growth</span>
+          <span class="cbig">947</span>
+          <span class="ccap">vendors signed door to door</span>
+          <span class="cmeta">Lagos · 5 roles</span>
+        </button>
+        <div class="cmap-panel" id="chp-02" role="region" aria-labelledby="ch-02">
+          <p class="cmap-intro"><b>Startup growth.</b> Two marketplace apps and a national conference, built from zero merchants and zero tickets.</p>
+          <ol class="htimeline" data-n="3">
+            <li><span class="y">2019–2022</span><div class="role" data-go="201stores" tabindex="0" role="link"><span class="w">Customer Acquisition &amp; Growth Manager</span><span class="o">201Stores</span><small>412 merchants signed · churn down 60%</small></div><div class="role" data-go="hospitality" tabindex="0" role="link"><span class="w">Marketing &amp; Events Manager</span><span class="o">Bar Enclave, Lagos</span><small>Retention up 40%</small></div></li>
+            <li><span class="y">2021</span><div class="role" data-go="itcoy" tabindex="0" role="link"><span class="w">Head of Public Relations</span><span class="o">I'll Take Care Of You (volunteer)</span><small>£3,000+ raised for 500+ people</small></div></li>
+            <li><span class="y">2022</span><div class="role" data-go="coupinapp" tabindex="0" role="link"><span class="w">Marketing Coordinator</span><span class="o">CoupinApp</span><small>535+ vendors · 21,323 users in 7 months</small></div><div class="role" data-go="prinvest" tabindex="0" role="link"><span class="w">Business Development &amp; Sales Lead</span><span class="o">Prinvest 2022, BusinessDay Media</span><small>Sold out · £18,000+ revenue</small></div></li>
+          </ol>
+        </div>
+        <button type="button" class="cmap-ch" id="ch-03" aria-selected="false" aria-expanded="false" aria-controls="chp-03">
+          <span class="cn">Chapter 03 <i>2023–2026</i></span>
+          <span class="ct">London</span>
+          <span class="cbig">£48,000</span>
+          <span class="ccap">added to quarterly sales</span>
+          <span class="cmeta">London · 6 roles</span>
+        </button>
+        <div class="cmap-panel" id="chp-03" role="region" aria-labelledby="ch-03">
+          <p class="cmap-intro"><b>London.</b> A Master’s, two charities and the operating side of hospitality.</p>
+          <ol class="htimeline" data-n="5">
+            <li><span class="y">2023</span><div class="role" data-go="hospitality" tabindex="0" role="link"><span class="w">Marketing &amp; Events Manager</span><span class="o">New Vision Hospitality, London</span><small>£48,000 added to quarterly sales</small></div><div class="role" data-go="hospitality" tabindex="0" role="link"><span class="w">Night Receptionist</span><span class="o">Beds and Bars, London</span><small>Reviews 2.9 → 3.7 · upsell revenue +20%</small></div></li>
+            <li><span class="y">2023–2024</span><div class="role" data-go="ambitious-about-autism" tabindex="0" role="link"><span class="w">MA Strategic Marketing Management</span><span class="o">University of Greenwich</span><small>Merit · GreHacks winner · GreStartup runner-up</small></div></li>
+            <li><span class="y">2024</span><div class="role"><span class="w">Business Development Manager</span><span class="o">Source AZ</span><small>Targets beaten by 20% · engagement up 70%</small></div></li>
+            <li><span class="y">2024–2026</span><div class="role" data-go="socialising-angels" tabindex="0" role="link"><span class="w">Marketing Manager</span><span class="o">Socialising Angels CIC (volunteer)</span><small>£25,000+ raised · organic traffic +35%</small></div></li>
+            <li><span class="y">2025–2026</span><div class="role" data-go="hospitality" tabindex="0" role="link"><span class="w">Night Receptionist</span><span class="o">Frasers Hospitality, London</span><small>Repeat complaints down 15–20%</small></div></li>
+          </ol>
+        </div>
+        <button type="button" class="cmap-ch" id="ch-04" aria-selected="false" aria-expanded="false" aria-controls="chp-04">
+          <span class="cn">Chapter 04 <i>2025–now</i></span>
+          <span class="ct">Founder mode</span>
+          <span class="cbig">30</span>
+          <span class="ccap">paying accounts from a standing start</span>
+          <span class="cmeta">Remote · Greece · 3 roles</span>
+        </button>
+        <div class="cmap-panel" id="chp-04" role="region" aria-labelledby="ch-04">
+          <p class="cmap-intro"><b>Founder mode.</b> A startup taken from concept to paying customers, then companies of my own.</p>
+          <ol class="htimeline" data-n="2">
+            <li><span class="y">2025–2026</span><div class="role" data-go="ekohacks" tabindex="0" role="link"><span class="w">Founding Growth &amp; BD Lead</span><span class="o">EkoHacks</span><small>Concept to 30 paying accounts · CAC down 40%</small></div></li>
+            <li class="now"><span class="y">Now</span><div class="role"><span class="w">Founder</span><span class="o">Gleamcave</span><small>Marketing consultancy, gleamcave.gr</small></div><div class="role"><span class="w">Founder</span><span class="o">Clothes for Humanity</span><small>clothesforhumanity.gr</small></div></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POWERS ================= -->
+<section class="section alt" id="powers" aria-labelledby="powers-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Powers</p>
+        <h2 id="powers-h">What I bring to the fight</h2>
+      </div>
+      <p>Skills, in the order I reach for them.</p>
+    </div>
+    <div class="powers">
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg>
+        <h3>Go-to-market strategy</h3>
+        <p>Pick the segment, map the competitors, decide the message, sequence the launch. Then actually run it.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        <h3>Field sales &amp; merchant acquisition</h3>
+        <p>Territory mapping, door-to-door pitching, onboarding. 947 vendors signed across two platforms.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 12h8M12 8v8"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3>Partnerships &amp; sponsorship</h3>
+        <p>Getting big firms, hospitality venues, employers and celebrities to say yes. Proposals, pitches, follow-through.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <h3>Event marketing</h3>
+        <p>Conferences, tournaments, activations and seminars. From selling the booth to filling the room.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 15l5-5 4 4 7-7"/><path d="M16 7h4v4"/></svg>
+        <h3>Paid social &amp; search</h3>
+        <p>Instagram, Google and LinkedIn campaigns with geo-targeting and A/B tested creative. £0.09 CPC on Google Ads for CoupinApp.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <h3>Email, cold outreach &amp; CRM</h3>
+        <p>Cold calling, email sequences and referral programmes that turn a list into a pipeline. HubSpot and Salesforce.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+        <h3>Content &amp; SEO</h3>
+        <p>Copy, blog content, landing pages and site structure that search engines and humans both read. Two website redesigns led.</p>
+      </article>
+      <article class="power reveal">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3>PR &amp; community</h3>
+        <p>Radio, print, press conferences, WhatsApp ambassador groups and influencer seeding.</p>
+      </article>
+    </div>
+    <div class="belt">
+      <p class="label">Utility belt</p>
+      <ul class="chips"><li>HubSpot</li><li>Salesforce</li><li>Google Ads</li><li>Google Analytics</li><li>Mailchimp</li><li>Hootsuite</li><li>Canva</li><li>Adobe InDesign</li><li>Tableau</li><li>Excel</li><li>Opera Cloud</li><li>Booking.com</li><li>Claude</li><li>ChatGPT</li><li>Perplexity</li><li>WordPress</li><li>HTML &amp; CSS</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FLYWHEEL ================= -->
+<section class="section halftone" id="flywheel" aria-labelledby="flywheel-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">How I work</p>
+        <h2 id="flywheel-h">The growth flywheel</h2>
+      </div>
+      <p>Every mission on this page runs the same loop. Pick a stage to see where I have done it, with the numbers.</p>
+    </div>
+    <div class="fly reveal">
+      <div class="fly-wheel">
+        <svg viewBox="0 0 360 360" role="group" aria-label="Growth flywheel stages">
+          <g class="fly-ring"></g>
+          <circle class="fly-track" cx="180" cy="180" r="85"/>
+          <circle class="fly-timer" cx="180" cy="180" r="85" pathLength="100"/>
+          <circle class="fly-hub" cx="180" cy="180" r="74"/>
+          <text class="fly-hub-k" x="180" y="168" text-anchor="middle">Stage</text>
+          <text class="fly-hub-v" x="180" y="198" text-anchor="middle">Attract</text>
+        </svg>
+        <button type="button" class="fly-toggle" aria-pressed="false"><span class="ico" aria-hidden="true"></span><span class="txt">Pause</span></button>
+      </div>
+      <div class="fly-panel" aria-live="polite">
+        <p class="label fly-num">01 / 04</p>
+        <h3 class="fly-title">Attract</h3>
+        <p class="fly-line"></p>
+        <ul class="fly-proof"></ul>
+        <p class="label">Where</p>
+        <div class="fly-where"></div>
+        <button type="button" class="btn btn-red fly-show">Show these missions</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MISSIONS ================= -->
+<section class="section halftone" id="missions" aria-labelledby="missions-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Case studies · Mission log</p>
+        <h2 id="missions-h">Missions</h2>
+      </div>
+      <p>Nine jobs, each with the brief, what I actually did, the number at the end, and the footage where there is some.</p>
+    </div>
+    <div class="filters reveal" role="toolbar" aria-label="Filter missions">
+      <span class="label">Filter</span>
+      <button type="button" class="fchip on" data-filter="all">All <b></b></button>
+      <button type="button" class="fchip" data-filter="industry:saas">SaaS &amp; startups <b></b></button>
+      <button type="button" class="fchip" data-filter="industry:events">Events <b></b></button>
+      <button type="button" class="fchip" data-filter="industry:hospitality">Hospitality <b></b></button>
+      <button type="button" class="fchip" data-filter="industry:impact">Charity &amp; impact <b></b></button>
+      <button type="button" class="fchip stage-chip" data-filter="" hidden></button>
+      <button type="button" class="expand-all" aria-pressed="false">Expand all</button>
+    </div>
+
+    <nav class="deck-rail" aria-label="Choose a mission" hidden></nav>
+    <div class="missions">
+
+      <article class="mission reveal" id="ekohacks" data-industry="saas" data-stage="attract convert">
+        <div class="art">
+          <span class="tag">Startup · 2025–26</span>
+          <div class="tile"><img src="assets/logos/ekohacks.png" alt="EkoHacks logo" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">Eko<br>Hacks</div>
+        </div>
+        <div class="body">
+          <h3>EkoHacks</h3>
+          <div class="meta"><span><b>Role</b> Founding Growth &amp; Business Development Lead</span><span><b>Where</b> Remote</span><span><b>When</b> Jan 2025 – Oct 2026</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Take the product from concept to paying customers and find the segments, message and price that make it repeatable.</p></div>
+          <ul class="kpis"><li><b>30</b><span>paying accounts from the first 50+ sign-ups</span></li><li><b>−40%</b><span>customer acquisition cost</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-ekohacks"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-ekohacks"><div class="more-in">
+          <p class="about">An early-stage developer education platform: a dojo that turns real engineering work into rank, so a team's merged pull requests and green builds become the game. I joined before it had a paying customer.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Ran customer discovery and structured market research to find the priority segments and the pain points they would pay to fix, and turned the findings into positioning, pricing and go-to-market decisions.</li>
+                <li>Converted the first <strong>50+</strong> registrations into <strong>30</strong> paying accounts by testing messaging, offers and acquisition channels in short cycles and keeping what converted.</li>
+                <li>Cut customer acquisition cost by <strong>40%</strong> as the channel mix settled.</li>
+                <li>Used AI-assisted workflows to speed up research, competitor mapping and experiment cycles.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Customer discovery</li><li>Market research</li><li>Positioning</li><li>Pricing</li><li>Email</li><li>Community</li><li>Experiments</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>From concept to 30 paying accounts out of the first 50+ registrations, with acquisition cost cut by 40%.</p></div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="coupinapp" data-industry="saas" data-stage="attract convert grow">
+        <div class="art">
+          <span class="tag">Marketplace app · 2022</span>
+          <div class="tile"><img src="assets/logos/coupinapp.jpg" alt="CoupinApp logo" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">Coupin<br>App</div>
+        </div>
+        <div class="body">
+          <h3>CoupinApp</h3>
+          <div class="meta"><span><b>Role</b> Marketing Coordinator</span><span><b>Where</b> Lagos, Nigeria</span><span><b>When</b> May – Dec 2022</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Grow downloads, merchant sign-ups and in-app sales from a standing start.</p></div>
+          <ul class="kpis"><li><b>535+</b><span>vendors onboarded</span></li><li><b>21,323</b><span>app users</span></li><li><b>7</b><span>months, from launch</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-coupinapp"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-coupinapp"><div class="more-in">
+          <p class="about">Nigeria's first real-time discount app, connecting shops and restaurants to customers through live promotions and rewards.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Catalogued every business in the target areas by industry on Google Maps, split the map into territories and assigned the team door to door, so no shop was visited twice.</li>
+                <li>Ran content, cold calling, email, social and paid campaigns to drive downloads.</li>
+                <li>Introduced flash sales and weekly category promotions to give users a reason to open the app.</li>
+                <li>Partnered with Connoisseur Club, Johnny Rockets and Ozone Cinemas on exclusive in-app events and pop-up sales.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Door to door</li><li>Social</li><li>Events</li><li>Activations</li><li>Email</li><li>Paid ads</li><li>Video</li><li>Referrals</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>535+ vendors and 21,323 users on the platform within 7 months.</p></div>
+          <div class="videos">
+            <p class="label">Watch</p>
+            <div class="vgrid">
+              <a class="video" href="https://www.youtube.com/watch?v=tZd6PixmRFw" target="_blank" rel="noopener" data-yt="tZd6PixmRFw"><img src="https://i.ytimg.com/vi/tZd6PixmRFw/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Get the best around you on Coupin</span></a>
+              <a class="video" href="https://www.youtube.com/watch?v=L66QlUizUYw" target="_blank" rel="noopener" data-yt="L66QlUizUYw"><img src="https://i.ytimg.com/vi/L66QlUizUYw/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Coupin pitch in the Lions' Den</span></a>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="201stores" data-industry="saas" data-stage="attract convert delight">
+        <div class="art">
+          <span class="tag">Business directory · 2019–22</span>
+          <div class="tile"><img src="assets/logos/201stores.jpg" alt="201Stores logo" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">201<br>Stores</div>
+        </div>
+        <div class="body">
+          <h3>201Stores</h3>
+          <div class="meta"><span><b>Role</b> Customer Acquisition &amp; Growth Manager</span><span><b>Where</b> Lagos, Nigeria</span><span><b>When</b> Feb 2019 – May 2022</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Build awareness, onboard merchants to advertise, drive sales through the platform and feed back what users needed.</p></div>
+          <ul class="kpis"><li><b>412</b><span>vendors I signed personally</span></li><li><b>3,800</b><span>site hits a day</span></li><li><b>−60%</b><span>app churn</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-201stores"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-201stores"><div class="more-in">
+          <p class="about">Nigeria's first online business directory, listing products, prices and contact details for each vendor.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Used the same Google Maps territory method to list every business in the target areas, then visited each one myself.</li>
+                <li>Searched social platforms by keyword to find people actively asking for a product, pointed them to the right vendor on the platform and earned commission on the referral.</li>
+                <li>Ran online competitions and referral drives to grow the user base, and pushed fixes to the app and website that cut churn by <strong>60%</strong>.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Door to door</li><li>Social</li><li>Keyword search</li><li>Referrals</li><li>Competitions</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>412 vendors onboarded personally, site traffic up to 3,800 hits a day, over 3 years.</p></div>
+          <div class="videos">
+            <p class="label">Watch</p>
+            <div class="vgrid">
+              <a class="video" href="https://www.youtube.com/watch?v=mh6LjaTCJSs" target="_blank" rel="noopener" data-yt="mh6LjaTCJSs"><img src="https://i.ytimg.com/vi/mh6LjaTCJSs/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Introducing 201Stores</span></a>
+              <a class="video" href="https://www.youtube.com/watch?v=eJLL8e41oA0" target="_blank" rel="noopener" data-yt="eJLL8e41oA0"><img src="https://i.ytimg.com/vi/eJLL8e41oA0/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">201Stores customer testimonial</span></a>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="prinvest" data-industry="events" data-stage="convert grow">
+        <div class="art">
+          <span class="tag">Conference · 2022</span>
+          <div class="tile"><img src="assets/logos/prinvest.png" alt="Prinvest Property Investment Show logo" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">Prinvest<br>2022</div>
+        </div>
+        <div class="body">
+          <h3>Prinvest 2022</h3>
+          <div class="meta"><span><b>Role</b> Business Development &amp; Sales Lead</span><span><b>Client</b> BusinessDay Media</span><span><b>When</b> April 2022</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Fill the conference with speakers, exhibitors and paying guests.</p></div>
+          <ul class="kpis"><li><b>Sold out</b><span>national property conference</span></li><li><b>£18,000+</b><span>revenue</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-prinvest"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-prinvest"><div class="more-in">
+          <p class="about">An annual property investment conference, property fair and TV show, held at Landmark Centre, Lagos.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Mapped the leading construction and real estate firms and profiled their competitors.</li>
+                <li>Pitched each firm on the category it led, so a first-mover slot felt like something to lose, then invited the rivals too so the line-up covered the whole industry.</li>
+                <li>Brought in smaller firms with the promise of networking with the big names.</li>
+                <li>Coordinated every merchant and vendor needed to set up the venue.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Cold calling</li><li>Email</li><li>Social</li><li>Print &amp; billboards</li><li>Blog content</li><li>Referrals</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>Sold out, with revenue above £18,000.</p></div>
+          <div class="videos">
+            <p class="label">Watch</p>
+            <div class="vgrid">
+              <a class="video" href="https://www.youtube.com/watch?v=IbRBU9zqS9Y" target="_blank" rel="noopener" data-yt="IbRBU9zqS9Y"><img src="https://i.ytimg.com/vi/IbRBU9zqS9Y/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Prinvest 2022</span></a>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="hospitality" data-industry="hospitality" data-stage="convert delight grow">
+        <div class="art">
+          <span class="tag">Hospitality · 2019–25</span>
+          <div class="tile quad"><img src="assets/logos/frasers.png" alt="Frasers Hospitality"><img src="assets/logos/beds-and-bars.png" alt="Beds and Bars"><img src="assets/logos/new-vision-hospitality.png" alt="New Vision Hospitality" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'q-txt',textContent:'New Vision Hospitality'}))"><img src="assets/logos/bar-enclave.png" alt="Bar Enclave"></div>
+        </div>
+        <div class="body">
+          <h3>Hospitality operations</h3>
+          <div class="meta"><span><b>Role</b> Night Receptionist · Marketing &amp; Events Manager</span><span><b>Where</b> Lagos &amp; London</span><span><b>When</b> 2019 – 2025, four operators</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Learn how a hospitality business actually runs, from the front desk to the night audit, and lift guest scores and revenue wherever I stood.</p></div>
+          <ul class="kpis"><li><b>2.9 → 3.7</b><span>guest review score</span></li><li><b>+20%</b><span>upsell revenue</span></li><li><b>£48,000</b><span>added to quarterly sales</span></li><li><b>−80%</b><span>staff turnover</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-hospitality"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-hospitality"><div class="more-in">
+          <p class="about">Bar Enclave in Lagos, then Beds and Bars, New Vision Hospitality and Frasers Hospitality in London: a bar, a hostel group, a three-venue restaurant group and five-star serviced apartments. I took these jobs on purpose, to learn the operating side of the businesses I market.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Ran the front desk on Opera Cloud, closed night audits with zero discrepancies, handled Booking.com enquiries and owned guest communication from pre-arrival to the post-stay review.</li>
+                <li>Took over online review responses at Beds and Bars and lifted scores from <strong>2.9</strong> to <strong>3.7</strong>; upsold rooms, food and local experiences for a <strong>20%</strong> rise in upsell revenue.</li>
+                <li>Recruited, trained and supervised night staff, cutting turnover by <strong>80%</strong> and lifting breakfast service quality by <strong>25%</strong>.</li>
+                <li>At New Vision Hospitality, designed guest-centric events and campaigns across three venues that added <strong>£48,000</strong> to quarterly sales and grew private bookings by <strong>60%</strong>.</li>
+                <li>Led service recovery at Frasers Hospitality, cutting repeat complaints by <strong>15</strong> to <strong>20%</strong>; wrote the front-of-house SOPs at Bar Enclave that lifted retention by <strong>40%</strong>.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Front desk</li><li>Opera Cloud</li><li>Booking.com</li><li>Guest reviews</li><li>Upselling</li><li>Events</li><li>Social &amp; PR</li><li>SOPs</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>Review scores up from 2.9 to 3.7, upsell revenue up 20%, £48,000 added to quarterly sales, staff turnover down 80%.</p></div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="ambitious-about-autism" data-industry="impact" data-stage="attract grow">
+        <div class="art">
+          <span class="tag">UK charity · 2023</span>
+          <div class="tile"><img src="assets/logos/ambitious-about-autism.jpg" alt="Ambitious About Autism logo" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">Ambitious<br>About<br>Autism</div>
+        </div>
+        <div class="body">
+          <h3>Ambitious About Autism</h3>
+          <div class="meta"><span><b>Role</b> Marketing Consultant, GreHacks winning team</span><span><b>Where</b> Edinburgh, Scotland &amp; South-West England</span><span><b>When</b> 2023</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Write and execute a go-to-market plan to bring the charity's employment programmes to recruiters in new regions.</p></div>
+          <ul class="kpis"><li><b>+30%</b><span>market share in the new regions</span></li><li><b>Winner</b><span>GreHacks 2023</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-ambitious-about-autism"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-ambitious-about-autism"><div class="more-in">
+          <p class="about">A UK national charity that improves opportunities for young autistic people, including routes into employment. This was the University of Greenwich GreHacks challenge, which my team won.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Built the business case for autism inclusion into content aimed at recruiters, and sent success stories to existing partners by email.</li>
+                <li>Cold called, emailed and used LinkedIn to reach disability-confident employers, with diversity-quota compliance as the hook.</li>
+                <li>Organised events and seminars that put recruiters in a room with candidates.</li>
+                <li>Planned a website redesign for SEO and ran donation campaigns with dedicated landing pages.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Email</li><li>Cold calling</li><li>LinkedIn</li><li>Events</li><li>SEO &amp; copy</li><li>Paid ads</li><li>Referrals</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>Market share up 30% in the target regions, with more recruiters converted to partners.</p></div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="socialising-angels" data-industry="impact" data-stage="attract grow">
+        <div class="art">
+          <span class="tag">Charity · volunteer</span>
+          <div class="tile"><img src="assets/logos/socialising-angels.png" alt="Socialising Angels logo" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">Socialising<br>Angels</div>
+        </div>
+        <div class="body">
+          <h3>Socialising Angels</h3>
+          <div class="meta"><span><b>Role</b> Marketing Manager</span><span><b>Where</b> United Kingdom</span><span><b>When</b> 2024 – Sep 2026, volunteer</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Build a brand people recognise, keep the channels alive, and turn attention into donations and event tickets.</p></div>
+          <ul class="kpis"><li><b>£25,000+</b><span>raised in two years</span></li><li><b>+35%</b><span>organic traffic</span></li><li><b>+40%</b><span>lead generation</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-socialising-angels"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-socialising-angels"><div class="more-in">
+          <p class="about">A UK community interest company that supports young adults aged 18 to 25 with learning disabilities through quality social experiences, where members make friends and build everyday skills. I ran its marketing end to end.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Planned, created and published organic content on the charity's own channels and partner pages as the core of a multichannel programme, with a content calendar delivered <strong>20%</strong> ahead of schedule across concurrent campaigns.</li>
+                <li>Reinvented the brand identity and personality, then kept it uniform across every social channel.</li>
+                <li>Supported fundraising by creating events, setting up crowdfunding, applying to funders and running the marketing campaigns behind each push.</li>
+                <li>Managed the community day to day: replies, conversations, and the follow-up that keeps supporters coming back.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Organic social</li><li>Partner pages</li><li>Events</li><li>Crowdfunding</li><li>Grant applications</li><li>Email</li><li>Community</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>Over £25,000 raised in two years. Organic traffic up 35%, lead generation up 40%, event revenue up 30% within three months, and 4,000+ views a month.</p></div>
+          <div class="videos">
+            <p class="label">Watch</p>
+            <div class="vgrid">
+              <a class="video" href="https://www.youtube.com/watch?v=I8XISmUMjNc" target="_blank" rel="noopener" data-yt="I8XISmUMjNc"><img src="https://i.ytimg.com/vi/I8XISmUMjNc/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Support Socialising Angels</span></a>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="konamii" data-industry="events impact" data-stage="attract grow">
+        <div class="art poster">
+          <span class="tag">Charity tournament · 2013–18</span>
+          <div class="tile"><img src="assets/logos/konamii.jpg" alt="KonamiiAfrica poster: Get involved, create happiness" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">Konamii<br>Lagos</div>
+        </div>
+        <div class="body">
+          <h3>KonamiiLagos</h3>
+          <div class="meta"><span><b>Role</b> Assistant VP, Media &amp; Publicity</span><span><b>Where</b> Lagos, Nigeria</span><span><b>When</b> 2013 – 2018, volunteer</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Grow attendance, protect the brand and attract sponsors and donors year after year.</p></div>
+          <ul class="kpis"><li><b>31,500</b><span>attendees over five years</span></li><li><b>25+</b><span>institutions funded</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-konamii"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-konamii"><div class="more-in">
+          <p class="about">An annual charity football competition raising money for institutions that serve the less privileged.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Recruited students from the top universities into curated WhatsApp communities and got them amplifying the campaign across their own feeds.</li>
+                <li>Invited celebrities to attend and used their presence as influencer reach.</li>
+                <li>Ran radio and print advertising and held press conferences ahead of each edition.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Radio</li><li>Print</li><li>Press</li><li>Social</li><li>Influencers</li><li>Word of mouth</li><li>Paid ads</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>Over 31,500 attendees and funds raised for 25+ institutions across 5 years.</p></div>
+          <div class="videos">
+            <p class="label">Watch</p>
+            <div class="vgrid">
+              <a class="video" href="https://www.youtube.com/watch?v=Znhbrttefao" target="_blank" rel="noopener" data-yt="Znhbrttefao"><img src="https://i.ytimg.com/vi/Znhbrttefao/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Konamii 2013 on LTV News</span></a>
+              <a class="video" href="https://www.youtube.com/watch?v=eOrbW9AzweQ" target="_blank" rel="noopener" data-yt="eOrbW9AzweQ"><img src="https://i.ytimg.com/vi/eOrbW9AzweQ/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">Konamii hype crew on LTV Sports Splash</span></a>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </article>
+
+      <article class="mission reveal" id="itcoy" data-industry="impact" data-stage="attract convert">
+        <div class="art poster">
+          <span class="tag">Community outreach · 2021</span>
+          <div class="tile"><img src="assets/logos/itcoy.jpg" alt="I'll Take Care Of You campaign poster" onerror="this.closest('.art').classList.add('no-img')"></div>
+          <div class="fallback" aria-hidden="true">I'll Take<br>Care<br>Of You</div>
+        </div>
+        <div class="body">
+          <h3>I'll Take Care Of You</h3>
+          <div class="meta"><span><b>Role</b> Head of Public Relations</span><span><b>Where</b> Ilupeju, Lagos</span><span><b>When</b> January 2021, volunteer</span></div>
+          <div class="goal"><span class="label">Mission</span><p>Raise awareness, protect the brand and bring in sponsorship and donations from businesses and individuals.</p></div>
+          <ul class="kpis"><li><b>£3,000+</b><span>raised in one campaign</span></li><li><b>500+</b><span>people given food and clothing</span></li></ul>
+          <button type="button" class="more-btn" aria-expanded="false" aria-controls="more-itcoy"><span>How I did it</span><i aria-hidden="true"></i></button>
+          <div class="more" id="more-itcoy"><div class="more-in">
+          <p class="about">A charity outreach by the Ilupeju Experience, raising money for food and clothing for people in need in the Ilupeju community.</p>
+          <div class="grid">
+            <div>
+              <p class="label">What I did</p>
+              <ul>
+                <li>Visited churches, pubs and community spots with flyers, where the audiences were already gathered.</li>
+                <li>Wrote proposals and pitched local businesses for donations.</li>
+                <li>Ran Instagram and Google ads targeted within a 3 km radius, A/B testing the creative.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="label">Channels</p>
+              <ul class="chips"><li>Social</li><li>Paid ads</li><li>Video</li><li>Word of mouth</li><li>Flyers</li></ul>
+            </div>
+          </div>
+          <div class="result"><span class="pow">Result</span><p>Over £3,000 raised, spent on food and clothing for more than 500 people.</p></div>
+          <div class="videos">
+            <p class="label">Watch</p>
+            <div class="vgrid">
+              <a class="video" href="https://www.youtube.com/watch?v=wrb1QOAOHeo" target="_blank" rel="noopener" data-yt="wrb1QOAOHeo"><img src="https://i.ytimg.com/vi/wrb1QOAOHeo/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play" aria-hidden="true"></span><span class="vt">The Ilupeju Experience (trailer)</span></a>
+            </div>
+          </div>
+          </div></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIDE QUESTS ================= -->
+<section class="section alt" id="ventures" aria-labelledby="ventures-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Side quests</p>
+        <h2 id="ventures-h">What I'm building now</h2>
+      </div>
+      <p>Two projects of my own, both live, both run in my own time alongside full-time work.</p>
+    </div>
+    <div class="ventures">
+      <a class="venture reveal" href="https://gleamcave.gr" target="_blank" rel="noopener">
+        <div class="logo"><img src="assets/logos/gleamcave.png" alt="Gleamcave logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mono',textContent:'G'}))"></div>
+        <div>
+          <h3>Gleamcave</h3>
+          <p>A strategic marketing consultancy. Diagnostics, go-to-market plans and hands-on execution for small businesses, online and offline.</p>
+          <span class="url">gleamcave.gr →</span>
+        </div>
+      </a>
+      <a class="venture reveal" href="https://clothesforhumanity.gr" target="_blank" rel="noopener">
+        <div class="logo"><span class="mono">C4H</span></div>
+        <div>
+          <h3>Clothes for Humanity</h3>
+          <p>A charity initiative built around clothing, run from Greece.</p>
+          <span class="url">clothesforhumanity.gr →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SIGNAL ================= -->
+<section class="signal" id="signal" aria-labelledby="signal-h">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:var(--gold)">Send the signal</p>
+      <h2 id="signal-h">Need growth? I answer the call.</h2>
+      <p>Give me a market and a target. I'm available now for full-time marketing, business development and growth roles, remote or on site. Send a job description, a brief, or just say hello. I reply within a day.</p>
+    </div>
+    <div class="contact reveal">
+      <a class="email" href="mailto:adeolu.adesunloye@gmail.com">adeolu.adesunloye@gmail.com</a>
+      <ul class="good-to-know" aria-label="Good to know">
+        <li><b>6+</b> years' experience</li>
+        <li>Based in <b>Greece</b> · open to remote and relocation</li>
+        <li><b>MA</b> Strategic Marketing, Greenwich</li>
+        <li>English · Yoruba · Greek (A1, in lessons)</li>
+      </ul>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/adeoluwa-adesunloye/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.4 2.6 4.4 6V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg>LinkedIn</a></li>
+        <li><a href="https://github.com/adeoluadesunloye" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a></li>
+        <li><a href="https://x.com/Nofugasy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 3h3l-7.3 8.4L22 21h-6.6l-5.1-6.3L4.3 21h-3l7.8-9L2 3h6.7l4.6 5.8zm-1.1 16.2h1.7L7.7 4.7H5.9z"/></svg>X</a></li>
+        <li><a href="https://www.instagram.com/Nofugasy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Adeoluwa Adesunloye</span>
+    <span><a href="https://gleamcave.gr" target="_blank" rel="noopener">Gleamcave</a> · <a href="https://clothesforhumanity.gr" target="_blank" rel="noopener">Clothes for Humanity</a></span>
+    <span>Hand-coded, no template · press <kbd>/</kbd> to search</span>
+  </div>
+</footer>
+<div class="ask" hidden>
+  <div class="ask-backdrop" data-close-ask></div>
+  <div class="ask-box" role="dialog" aria-modal="true" aria-labelledby="ask-label">
+    <div class="ask-head">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <label id="ask-label" for="ask-input" class="sr">Ask the portfolio</label>
+      <input id="ask-input" type="text" autocomplete="off" spellcheck="false" placeholder="Ask the portfolio: hospitality, sales, AI, events…" role="combobox" aria-expanded="true" aria-controls="ask-list">
+      <kbd>Esc</kbd>
+    </div>
+    <div class="ask-try"><span>Try</span></div>
+    <ul id="ask-list" class="ask-list" role="listbox"></ul>
+    <p class="ask-foot"><span>↑ ↓ to move · Enter to open</span><span>Runs in your browser. Nothing is sent anywhere.</span></p>
+  </div>
+</div>
+<script>
+document.documentElement.classList.add('js');
+document.getElementById('year').textContent=new Date().getFullYear();
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// Click-to-play: swap the thumbnail tile for the YouTube player, so nothing loads until asked.
+document.querySelectorAll('.video[data-yt]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    var box=document.createElement('div');box.className='video embedded';
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube-nocookie.com/embed/'+a.dataset.yt+'?autoplay=1&rel=0';
+    f.title=a.querySelector('.vt').textContent;
+    f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;
+    box.appendChild(f);a.replaceWith(box);
+  });
+});
+
+// Reading progress bar + parallax offset, one rAF per scroll.
+var bar=document.querySelector('.progress'),root=document.documentElement,ticking=false;
+function onScroll(){
+  if(ticking)return;ticking=true;
+  requestAnimationFrame(function(){
+    var max=root.scrollHeight-innerHeight;
+    if(bar)bar.style.transform='scaleX('+(max>0?scrollY/max:0)+')';
+    if(!reduce)root.style.setProperty('--sy',Math.min(scrollY,900));
+    ticking=false;
+  });
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+// Reveal on scroll.
+var revealed=new IntersectionObserver(function(entries){
+  entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');revealed.unobserve(en.target);}});
+},{threshold:.15,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){revealed.observe(el);});
+
+// Count the headline numbers up when the band comes into view.
+function countUp(el){
+  var txt=el.textContent.trim(),m=txt.match(/^([^\d]*)([\d,]+)(.*)$/);
+  if(!m||reduce)return;
+  var end=parseInt(m[2].replace(/,/g,''),10),pre=m[1],suf=m[3],t0=null,dur=1400;
+  function step(t){
+    if(!t0)t0=t;var p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,3);
+    el.textContent=pre+Math.round(end*e).toLocaleString('en-GB')+suf;
+    if(p<1)requestAnimationFrame(step);
+  }
+  el.textContent=pre+'0'+suf;requestAnimationFrame(step);
+}
+var band=document.querySelector('.stats');
+if(band){
+  var once=new IntersectionObserver(function(entries){
+    if(entries[0].isIntersecting){band.querySelectorAll('.stat b').forEach(countUp);once.disconnect();}
+  },{threshold:.4});
+  once.observe(band);
+}
+
+// Highlight the section in view in the nav.
+var links=[].slice.call(document.querySelectorAll('.nav li a[href^="#"]'));
+var spy=new IntersectionObserver(function(entries){
+  entries.forEach(function(en){
+    if(!en.isIntersecting)return;
+    links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+en.target.id);});
+  });
+},{rootMargin:'-40% 0px -55% 0px'});
+['origin','powers','missions','ventures','signal'].forEach(function(id){var s=document.getElementById(id);if(s)spy.observe(s);});
+
+
+// ===== Hero: rotating "Proven in" line (typed out, then erased) =====
+(function(){
+  var el=document.querySelector('.cover .rot'); if(!el) return;
+  var words=["SaaS startups","hotels & restaurants","sold-out events","charities","marketplaces"], i=0;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function type(w,n){el.textContent=w.slice(0,n); if(n<w.length) setTimeout(function(){type(w,n+1)},55); else setTimeout(function(){erase(w,w.length)},1800)}
+  function erase(w,n){el.textContent=w.slice(0,n); if(n>0) setTimeout(function(){erase(w,n-1)},28); else {i=(i+1)%words.length; setTimeout(function(){type(words[i],1)},250)}}
+  setTimeout(function(){erase(words[0],words[0].length)},2200);
+})();
+
+// ===== Growth flywheel =====
+(function(){
+  var STAGES=[
+    {k:'attract',name:'Attract',line:'Find the people who need it, and get in front of them first.',
+     proof:[['947','vendors signed door to door across two platforms'],['31,500','attendees drawn to KonamiiLagos over five years'],['+35%','organic traffic for Socialising Angels']]},
+    {k:'convert',name:'Convert',line:'Turn interest into a signed yes, and get paid.',
+     proof:[['Sold out','Prinvest 2022, £18,000+ revenue'],['30 / 50+','EkoHacks registrations turned into paying accounts'],['+20%','upsell revenue at Beds and Bars']]},
+    {k:'delight',name:'Delight',line:'Make them glad they said yes, so they stay.',
+     proof:[['−60%','churn at 201Stores after fixing what users complained about'],['2.9 → 3.7','guest review score at Beds and Bars'],['−80%','night staff turnover after I took over hiring and training']]},
+    {k:'grow',name:'Grow',line:'Turn today\u2019s customers and partners into tomorrow\u2019s.',
+     proof:[['£48,000','added to quarterly sales at New Vision Hospitality'],['+30%','market share for Ambitious About Autism'],['£25,000+','raised for Socialising Angels in two years']]}
+  ];
+  var root=document.getElementById('flywheel'); if(!root) return;
+  var ring=root.querySelector('.fly-ring'), hubV=root.querySelector('.fly-hub-v');
+  var panel=root.querySelector('.fly-panel'), title=panel.querySelector('.fly-title'), num=panel.querySelector('.fly-num'),
+      line=panel.querySelector('.fly-line'), proof=panel.querySelector('.fly-proof'), where=panel.querySelector('.fly-where'), show=panel.querySelector('.fly-show');
+  var NS='http://www.w3.org/2000/svg', C=180, R1=96, R2=168, GAP=3;
+  function pt(r,a){a=(a-90)*Math.PI/180;return [C+r*Math.cos(a),C+r*Math.sin(a)]}
+  function arc(a0,a1){var p=[pt(R2,a0),pt(R2,a1),pt(R1,a1),pt(R1,a0)];
+    return 'M'+p[0]+' A'+R2+' '+R2+' 0 0 1 '+p[1]+' L'+p[2]+' A'+R1+' '+R1+' 0 0 0 '+p[3]+'Z'}
+  var segs=STAGES.map(function(s,i){
+    var a0=i*90+GAP, a1=(i+1)*90-GAP, mid=(a0+a1)/2, g=document.createElementNS(NS,'g');
+    g.setAttribute('class','fly-seg'); g.setAttribute('tabindex','0'); g.setAttribute('role','button'); g.setAttribute('aria-label',s.name+' stage');
+    var p=document.createElementNS(NS,'path'); p.setAttribute('class','arc'); p.setAttribute('d',arc(a0,a1)); g.appendChild(p);
+    var lp=pt((R1+R2)/2,mid), at=document.createElementNS(NS,'g'), lab=document.createElementNS(NS,'g');
+    at.setAttribute('transform','translate('+lp[0]+','+lp[1]+')'); lab.setAttribute('class','fly-lab');
+    var t=document.createElementNS(NS,'text'); t.setAttribute('x',0); t.setAttribute('y',10); t.setAttribute('text-anchor','middle'); t.textContent=s.name; lab.appendChild(t);
+    var t2=document.createElementNS(NS,'text'); t2.setAttribute('class','n'); t2.setAttribute('x',0); t2.setAttribute('y',-6); t2.setAttribute('text-anchor','middle'); t2.textContent='0'+(i+1); lab.appendChild(t2);
+    at.appendChild(lab); g.appendChild(at);
+    var cp=pt(R2+2,(i+1)*90), ch=document.createElementNS(NS,'path'), ang=(i+1)*90;
+    ch.setAttribute('class','chev'); ch.setAttribute('d','M-7,-6 L5,0 L-7,6 Z'); ch.setAttribute('transform','translate('+cp[0]+','+cp[1]+') rotate('+ang+')');
+    ring.appendChild(g); ring.appendChild(ch);
+    g.addEventListener('click',function(){stop();pick(i)});
+    g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();stop();pick(i)}});
+    return g;
+  });
+  var cur=0;
+  function pick(i){
+    cur=i; var s=STAGES[i];
+    segs.forEach(function(g,j){g.classList.toggle('on',j===i);g.setAttribute('aria-pressed',j===i)});
+    hubV.textContent=s.name; title.textContent=s.name; num.textContent='0'+(i+1)+' / 04'; line.textContent=s.line;
+    proof.innerHTML=s.proof.map(function(p){return '<li><b>'+p[0]+'</b><span>'+p[1]+'</span></li>'}).join('');
+    var ms=[].slice.call(document.querySelectorAll('.mission[data-stage~="'+s.k+'"]'));
+    where.innerHTML=ms.map(function(m){return '<a href="#'+m.id+'" data-jump="'+m.id+'">'+m.querySelector('h3').textContent+'</a>'}).join('');
+    show.textContent='Show these '+ms.length+' missions';
+    show.dataset.stage=s.k; show.dataset.name=s.name;
+    panel.classList.remove('swap'); void panel.offsetWidth; panel.classList.add('swap');
+    root.classList.remove('tick'); void root.offsetWidth; if(timer) root.classList.add('tick');
+  }
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, timer=null, seen=false, held=false, paused=reduce;
+  var toggle=root.querySelector('.fly-toggle'), STEP=innerWidth<=900?9000:8000, FIRST=4000;
+  root.style.setProperty('--fly-step',STEP+'ms');
+  function halt(){if(timer){clearTimeout(timer);timer=null} root.classList.remove('tick')}
+  // first change comes quickly once the wheel is on screen, then a steady beat; the gold ring counts down each wait
+  function wait(d){root.style.setProperty('--fly-step',d+'ms'); root.classList.remove('tick'); void root.offsetWidth; root.classList.add('tick'); timer=setTimeout(function(){timer=null; pick((cur+1)%4); if(!paused&&!held&&seen) wait(STEP)},d)}
+  function run(){if(paused||held||!seen||timer) return; wait(FIRST)}
+  function setPaused(p){paused=p; root.classList.toggle('paused',p); toggle.setAttribute('aria-pressed',p); toggle.querySelector('.txt').textContent=p?'Play':'Pause'; toggle.setAttribute('aria-label',p?'Play the flywheel':'Pause the flywheel'); p?halt():run()}
+  // the old click handlers call stop(): picking a stage yourself pauses the tour on that stage
+  function stop(){setPaused(true)}
+  toggle.addEventListener('click',function(){setPaused(!paused)});
+  // one steady panel height for all four stages, so the page below never shifts as stages change
+  function fit(){panel.style.minHeight=""; var mx=0, keep=cur; for(var i=0;i<4;i++){pick(i); mx=Math.max(mx,panel.offsetHeight)} pick(keep); panel.style.minHeight=mx+"px"}
+  pick(0); fit(); var fitT; addEventListener("resize",function(){clearTimeout(fitT);fitT=setTimeout(fit,200)}); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+  setPaused(paused);
+  new IntersectionObserver(function(es){es.forEach(function(e){seen=e.isIntersecting; seen?run():halt()})},{threshold:.35}).observe(root.querySelector('.fly-wheel')||root);
+  // hovering (desktop) or touching the panel (phone) holds the stage while it is being read
+  function hold(){held=true;halt()} function release(){held=false;run()}
+  panel.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')hold()});
+  panel.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse')release()});
+  var relT; panel.addEventListener('touchstart',function(){hold();clearTimeout(relT);relT=setTimeout(release,9000)},{passive:true});
+  show.addEventListener('click',function(){window.__filterMissions('stage:'+show.dataset.stage,show.dataset.name);document.getElementById('missions').scrollIntoView({behavior:reduce?'auto':'smooth'})});
+})();
+
+// ===== Mission filters =====
+(function(){
+  var bar=document.querySelector('.filters'); if(!bar) return;
+  var ms=[].slice.call(document.querySelectorAll('.mission')), chips=[].slice.call(bar.querySelectorAll('.fchip')), stageChip=bar.querySelector('.stage-chip');
+  function matches(m,f){if(f==='all')return true;var p=f.split(':');return (m.dataset[p[0]]||'').split(' ').indexOf(p[1])>-1}
+  chips.forEach(function(c){var f=c.dataset.filter,b=c.querySelector('b');if(b)b.textContent=ms.filter(function(m){return matches(m,f)}).length});
+  function apply(f,label){
+    ms.forEach(function(m){m.hidden=!matches(m,f); if(!m.hidden) m.classList.add('in')});
+    chips.forEach(function(c){c.classList.toggle('on',c.dataset.filter===f);c.setAttribute('aria-pressed',c.dataset.filter===f)});
+    if(f.indexOf('stage:')===0){stageChip.hidden=false;stageChip.dataset.filter=f;stageChip.innerHTML='Stage: '+label+' <b>×</b>';stageChip.classList.add('on')}
+    else{stageChip.hidden=true}
+  }
+  window.__filterMissions=apply;
+  bar.addEventListener('click',function(e){var c=e.target.closest('.fchip');if(!c)return;window.__filterMissions(c===stageChip?'all':c.dataset.filter)});
+})();
+
+
+// ===== Mission detail on demand =====
+(function(){
+  var ms=[].slice.call(document.querySelectorAll('.mission')), all=document.querySelector('.expand-all');
+  function set(m,open){m.classList.toggle('open',open);var b=m.querySelector('.more-btn');if(b){b.setAttribute('aria-expanded',open);b.querySelector('span').textContent=open?'Hide the detail':'How I did it'}}
+  ms.forEach(function(m){var b=m.querySelector('.more-btn');if(b)b.addEventListener('click',function(){set(m,!m.classList.contains('open'));sync()})});
+  function sync(){if(!all)return;var on=ms.every(function(m){return m.classList.contains('open')});all.setAttribute('aria-pressed',on);all.textContent=on?'Collapse all':'Expand all'}
+  if(all)all.addEventListener('click',function(){var on=all.getAttribute('aria-pressed')!=='true';ms.forEach(function(m){set(m,on)});sync()});
+  window.__openMission=function(el){if(el&&el.classList.contains('mission')){set(el,true);sync()}};
+})();
+
+// ===== Jump helper: scroll to a mission (clearing filters) and flash it =====
+window.__jump=function(id){
+  var el=document.getElementById(id)||document.querySelector(id); if(!el) return;
+  if(el.classList.contains('mission')&&el.hidden&&window.__filterMissions) window.__filterMissions('all');
+  el.classList.add('in');
+  if(el.classList.contains('mission')&&window.__deckShow){window.__deckShow(el.id,{scroll:false});el=document.querySelector('.deck-rail')||el}
+  if(window.__openMission) window.__openMission(document.getElementById(id));
+  el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  var fl=document.getElementById(id)||el; fl.classList.remove('flash'); void fl.offsetWidth; fl.classList.add('flash');
+};
+document.addEventListener('click',function(e){var a=e.target.closest('[data-jump]');if(a){e.preventDefault();window.__jump(a.dataset.jump)}});
+document.querySelectorAll('.role[data-go]').forEach(function(r){
+  function go(){window.__jump(r.dataset.go)}
+  r.addEventListener('click',go);
+  r.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();go()}});
+});
+
+
+// ===== Mission deck: one mission on stage, the next slides in to replace it =====
+(function(){
+  var box=document.querySelector('.missions'), rail=document.querySelector('.deck-rail'); if(!box||!rail) return;
+  var ms=[].slice.call(box.querySelectorAll('.mission')); if(ms.length<2) return;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, cur=0, busy=null;
+  box.classList.add('deck'); rail.hidden=false;
+  ms.forEach(function(m){m.classList.add('in')});
+  var tabs=ms.map(function(m,i){
+    var b=document.createElement('button'); b.type='button'; b.className='deck-tab'; b.setAttribute('aria-controls',m.id);
+    var img=m.querySelector('.tile img'), title=m.querySelector('h3').textContent;
+    b.innerHTML='<span class="dn">'+(i<9?'0':'')+(i+1)+'</span><span class="dl">'+(img?'<img alt="" src="'+img.getAttribute('src')+'">':'')+'</span><span class="dt"></span>';
+    b.querySelector('.dt').textContent=title;
+    if(m.querySelector('.art.poster')) b.classList.add('poster');
+    b.addEventListener('click',function(){show(i,{})});
+    rail.appendChild(b); return b;
+  });
+  var bar=document.createElement('div'); bar.className='deck-bar';
+  bar.innerHTML='<button type="button" class="deck-prev" aria-label="Previous mission"><span aria-hidden="true">←</span> Prev</button><span class="deck-count" aria-live="polite"></span><button type="button" class="deck-next"><span class="nx-k">Next mission</span><span class="nx-t"></span><span aria-hidden="true" class="nx-a">→</span></button>';
+  box.after(bar);
+  var prevB=bar.querySelector('.deck-prev'), nextB=bar.querySelector('.deck-next'), count=bar.querySelector('.deck-count');
+  function pool(){return ms.map(function(m,i){return i}).filter(function(i){return !ms[i].hidden})}
+  function step(d){var p=pool(), k=p.indexOf(cur); if(k<0) return p[0]; return p[(k+d+p.length)%p.length]}
+  function pad(n){return (n<10?'0':'')+n}
+  function paint(){
+    var p=pool(), k=p.indexOf(cur), nx=ms[step(1)];
+    tabs.forEach(function(t,i){t.hidden=ms[i].hidden; t.classList.toggle('on',i===cur); t.setAttribute('aria-current',i===cur?'true':'false')});
+    count.innerHTML='<b>'+pad(k+1)+'</b> / '+pad(p.length);
+    nextB.querySelector('.nx-t').textContent=nx.querySelector('h3').textContent;
+    nextB.setAttribute('aria-label','Next mission: '+nx.querySelector('h3').textContent);
+    prevB.disabled=nextB.disabled=p.length<2;
+    var t=tabs[cur]; if(t&&rail.scrollWidth>rail.clientWidth) rail.scrollTo({left:t.offsetLeft-rail.clientWidth/2+t.offsetWidth/2,behavior:reduce?'auto':'smooth'});
+  }
+  function show(i,o){
+    o=o||{}; if(i==null||i<0) return;
+    if(i===cur&&ms[i].classList.contains('cur')){paint();return}
+    var out=ms[cur], inn=ms[i], fwd=o.dir?o.dir>0:i>cur;
+    if(busy){busy();busy=null}
+    ms.forEach(function(m){m.classList.remove('cur','leaving','in-l','in-r','out-l','out-r')});
+    cur=i; inn.classList.add('cur'); paint();
+    if(!reduce&&out&&out!==inn&&!o.instant){
+      out.classList.add('leaving',fwd?'out-l':'out-r'); inn.classList.add(fwd?'in-r':'in-l');
+      var done=function(){out.classList.remove('leaving','out-l','out-r'); inn.classList.remove('in-l','in-r')};
+      var tm=setTimeout(done,650); busy=function(){clearTimeout(tm);done()};
+    }
+    if(o.scroll!==false){var r=rail.getBoundingClientRect(); if(r.top<0||r.top>innerHeight*.5) rail.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})}
+  }
+  window.__deckShow=function(id,o){var i=ms.findIndex(function(m){return m.id===id}); if(i>-1) show(i,o||{})};
+  prevB.addEventListener('click',function(){show(step(-1),{dir:-1})});
+  nextB.addEventListener('click',function(){show(step(1),{dir:1})});
+  rail.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var d=e.key==='ArrowRight'?1:-1,j=step(d);show(j,{dir:d,scroll:false});tabs[j].focus()}});
+  var sx=0,sy=0,st=0;
+  box.addEventListener('touchstart',function(e){var t=e.touches[0];sx=t.clientX;sy=t.clientY;st=Date.now()},{passive:true});
+  box.addEventListener('touchend',function(e){var t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy; if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.6&&Date.now()-st<700){show(step(dx<0?1:-1),{dir:dx<0?1:-1,scroll:false})}},{passive:true});
+  var f0=window.__filterMissions;
+  if(f0) window.__filterMissions=function(f,l){f0(f,l); var p=pool(); if(!p.length) return; if(f==='all'&&p.indexOf(cur)>-1){paint();return} if(p[0]===cur){paint();return} show(p[0],{dir:1,scroll:false})};
+  var start=ms.findIndex(function(m){return '#'+m.id===location.hash}); show(start>-1?start:0,{instant:true,scroll:false});
+})();
+
+
+// ===== Career map: pick a chapter, its roles slide in =====
+(function(){
+  var root=document.querySelector('.cmap'); if(!root) return;
+  var tabs=[].slice.call(root.querySelectorAll('.cmap-ch')), panels=[].slice.call(root.querySelectorAll('.cmap-panel'));
+  root.classList.add('on');
+  function sel(i,focus){
+    tabs.forEach(function(t,j){t.setAttribute("aria-selected",j===i?"true":"false");t.setAttribute("aria-expanded",j===i?"true":"false")});
+    panels.forEach(function(p,j){p.hidden=j!==i; if(j===i){p.classList.remove('swap');void p.offsetWidth;p.classList.add('swap')}});
+    if(focus) tabs[i].focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){sel(i)});
+    t.addEventListener('keydown',function(e){var k=e.key,n=tabs.length;
+      if(k==='ArrowRight'||k==='ArrowDown'){e.preventDefault();sel((i+1)%n,true)}
+      else if(k==='ArrowLeft'||k==='ArrowUp'){e.preventDefault();sel((i+n-1)%n,true)}});
+  });
+  sel(0);
+})();
+
+// ===== Ask the portfolio =====
+(function(){
+  var wrap=document.querySelector('.ask'); if(!wrap) return;
+  var input=wrap.querySelector('#ask-input'), list=wrap.querySelector('#ask-list'), tryBox=wrap.querySelector('.ask-try');
+  var txt=function(el){return el?el.textContent.replace(/\s+/g,' ').trim():''};
+  var IDX=[];
+  document.querySelectorAll('.mission').forEach(function(m){
+    IDX.push({kind:'mission',title:txt(m.querySelector('h3')),body:[txt(m.querySelector('.meta')),txt(m.querySelector('.about')),txt(m.querySelector('.goal p')),txt(m.querySelector('.result p')),[].map.call(m.querySelectorAll('.grid ul:not(.chips) li'),txt).join(' '),[].map.call(m.querySelectorAll('.chips li'),txt).join(' ')].join(' · '),
+      summary:txt(m.querySelector('.result p')),go:m.id});
+  });
+  document.querySelectorAll('.power').forEach(function(p){IDX.push({kind:'skill',title:txt(p.querySelector('h3')),body:txt(p.querySelector('p')),summary:txt(p.querySelector('p')),go:'#powers'})});
+  document.querySelectorAll('.htimeline .role').forEach(function(r){var y=txt(r.closest('li').querySelector('.y'));IDX.push({kind:'timeline',title:txt(r.querySelector('.w'))+' · '+txt(r.querySelector('.o')),body:y+' '+txt(r.querySelector('small')),summary:y+(r.querySelector('small')?' · '+txt(r.querySelector('small')):''),go:r.dataset.go||'#origin'})});
+  [['About me','origin story, background, Lagos, London, Greece, why I work this way','#origin'],['Skills and tools','powers, HubSpot, Salesforce, Google Ads, Claude, ChatGPT, Perplexity, AI tools','#powers'],['The growth flywheel','attract convert delight grow, how I work, process','#flywheel'],['Ventures','Gleamcave, Clothes for Humanity, founder, side projects','#ventures'],['Contact and hire me','email, LinkedIn, GitHub, hire, available now, remote, relocation','#signal']].forEach(function(s){IDX.push({kind:'page',title:s[0],body:s[1],summary:s[1],go:s[2]})});
+  IDX.forEach(function(e){e.hay=(e.title+' '+e.body).toLowerCase()});
+  var SYN={ai:['ai','ai-assisted','claude','chatgpt','perplexity'],sales:['sales','sold','close','closed','revenue','convert','upsell'],hotel:['hospitality','hotel','reception','guest'],restaurant:['hospitality','restaurant','bar'],charity:['charity','volunteer','fundrais','donation','raised'],money:['£','revenue','raised','sales'],contact:['contact','email','hire']};
+  var TRY=['Sales results','Hospitality','AI','Events','Charity','Contact'];
+  tryBox.insertAdjacentHTML('beforeend',TRY.map(function(t){return '<button type="button">'+t+'</button>'}).join(''));
+  tryBox.addEventListener('click',function(e){var b=e.target.closest('button');if(b){input.value=b.textContent;render();input.focus()}});
+  function terms(q){var out=[];q.toLowerCase().split(/[^a-z0-9£+%]+/).filter(Boolean).forEach(function(w){out.push(w);Object.keys(SYN).forEach(function(k){if(w.indexOf(k)===0||k.indexOf(w)===0&&w.length>2)out=out.concat(SYN[k])})});return out.filter(function(w,i,a){return a.indexOf(w)===i})}
+  // Short terms (ai, bd, seo) must match a whole word, so "ai" doesn't hit "campaigns" or "email".
+  function rx(w,flags){var e=w.replace(/[.*+?^$\{\}()|[\]\\]/g,'\\$&');return new RegExp(w.length<=3?'(^|[^a-z0-9])('+e+')(?=[^a-z0-9]|$)':'()('+e+')',flags)}
+  function hits(str,w){var m=str.match(rx(w,'g'));return m?m.length:0}
+  function score(e,ts){var s=0,t=e.title.toLowerCase();ts.forEach(function(w){if(hits(t,w))s+=6;var c=hits(e.hay,w);if(c){s+=2+Math.min(3,c-1)}});return s?s+(e.kind==='mission'?1:0):0}
+  function snip(e,ts){var src=e.body,low=src.toLowerCase(),at=-1;ts.some(function(w){var m=rx(w,'').exec(low);at=m?m.index+m[1].length:-1;return at>-1});
+    var s=at<0?e.summary:(at>40?'…':'')+src.slice(Math.max(0,at-40),at+110)+(at+110<src.length?'…':'');
+    s=s.replace(/[&<>]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]});
+    ts.filter(function(w){return w.length>1}).forEach(function(w){s=s.replace(rx(w,'ig'),'$1<mark>$2</mark>')});return s}
+  var shown=[],sel=0;
+  function render(){
+    var q=input.value.trim(),ts=terms(q);
+    shown=q?IDX.map(function(e){return {e:e,s:score(e,ts)}}).filter(function(x){return x.s>0}).sort(function(a,b){return b.s-a.s}).slice(0,8).map(function(x){return x.e})
+           :IDX.filter(function(e){return e.kind==='mission'}).slice(0,5);
+    tryBox.hidden=!!q; sel=0;
+    list.innerHTML=shown.length?shown.map(function(e,i){return '<li role="option" id="ask-o'+i+'" aria-selected="'+(i===0)+'"><span class="k k-'+e.kind+'">'+e.kind+'</span><span class="t">'+e.title+'</span><span class="s">'+(q?snip(e,ts):e.summary)+'</span></li>'}).join('')
+      :'<li class="none">Nothing on the site matches that yet. Try “sales”, “events” or “AI”.</li>';
+    input.setAttribute('aria-activedescendant',shown.length?'ask-o0':'');
+  }
+  function move(d){if(!shown.length)return;sel=(sel+d+shown.length)%shown.length;[].forEach.call(list.children,function(li,i){li.setAttribute('aria-selected',i===sel)});list.children[sel].scrollIntoView({block:'nearest'});input.setAttribute('aria-activedescendant','ask-o'+sel)}
+  function open(){wrap.hidden=false;document.body.style.overflow='hidden';input.value='';render();setTimeout(function(){input.focus()},20)}
+  function close(){wrap.hidden=true;document.body.style.overflow=''}
+  function go(i){var e=shown[i];if(!e)return;close();window.__jump(e.go.charAt(0)==='#'?e.go:e.go)}
+  input.addEventListener('input',render);
+  input.addEventListener('keydown',function(e){if(e.key==='ArrowDown'){e.preventDefault();move(1)}else if(e.key==='ArrowUp'){e.preventDefault();move(-1)}else if(e.key==='Enter'){e.preventDefault();go(sel)}else if(e.key==='Escape'){close()}});
+  list.addEventListener('click',function(e){var li=e.target.closest('li[role=option]');if(li)go([].indexOf.call(list.children,li))});
+  wrap.addEventListener('click',function(e){if(e.target.hasAttribute('data-close-ask'))close()});
+  document.querySelectorAll('[data-open-ask]').forEach(function(b){b.addEventListener('click',open)});
+  document.addEventListener('keydown',function(e){
+    var typing=/input|textarea|select/i.test((document.activeElement||{}).tagName||'');
+    if((e.key==='k'||e.key==='K')&&(e.metaKey||e.ctrlKey)){e.preventDefault();wrap.hidden?open():close()}
+    else if(e.key==='/'&&!typing&&wrap.hidden){e.preventDefault();open()}
+    else if(e.key==='Escape'&&!wrap.hidden){close()}
+  });
+  var mac=/Mac|iPhone|iPad/.test(navigator.platform||'');
+  document.querySelectorAll('.ask-btn kbd').forEach(function(k){k.textContent=mac?'⌘K':'Ctrl K'});
+})();
+</script>
+</body>
+</html>
