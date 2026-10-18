@@ -209,7 +209,7 @@ h1,h2,h3,.stat span,.htimeline .w,.htimeline small,.video .vt,.caption{text-wrap
 .video.embedded iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 /* ventures */
-.ventures{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.ventures{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:22px}
 .venture{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;background:var(--paper);border:3px solid var(--line);box-shadow:8px 8px 0 var(--line);padding:20px;text-decoration:none;transition:transform .15s,box-shadow .15s}
 .venture:hover{transform:translate(-2px,-2px);box-shadow:10px 10px 0 var(--line)}
 .venture .logo{width:120px;height:120px;display:grid;place-items:center;background:#fff;border:3px solid var(--line);padding:10px}
@@ -218,6 +218,9 @@ h1,h2,h3,.stat span,.htimeline .w,.htimeline small,.video .vt,.caption{text-wrap
 .venture h3{font-size:1.25rem;color:var(--ink);margin-bottom:6px}
 .venture p{color:var(--muted);font-size:.94rem}
 .venture .url{display:inline-block;margin-top:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.7rem;color:var(--red)}
+.venture>div{min-width:0}
+.venture h3,.venture p{overflow-wrap:break-word}
+.venture .url{overflow-wrap:anywhere;max-width:100%}
 
 /* signal */
 .signal{background:var(--ink);color:var(--paper);border-top:4px solid var(--red);position:relative;overflow:hidden;isolation:isolate}
@@ -826,7 +829,7 @@ posthog.init('phc_npvvmxyec4uy5YvN9sv9xbhDRtZ4xEth6Y6MUhzMf5LA', {
       <p class="label">Utility belt <span class="hint">· 45 tools I use</span></p>
       <div class="belt-grid">
         <div class="pouch"><p class="pk">Ads &amp; social</p><ul class="chips"><li>Google Ads</li><li>Meta Ads</li><li>LinkedIn Campaign Manager</li><li>Hootsuite</li><li>Pinterest</li></ul></div>
-        <div class="pouch"><p class="pk">Analytics &amp; SEO</p><ul class="chips"><li>Google Analytics 4</li><li>Google Tag Manager</li><li>SEMrush</li><li>Ahrefs</li><li>Tableau</li><li>Excel</li><li>SPSS</li></ul></div>
+        <div class="pouch"><p class="pk">Analytics &amp; SEO</p><ul class="chips"><li>Google Analytics 4</li><li>Google Tag Manager</li><li>PostHog</li><li>SEMrush</li><li>Ahrefs</li><li>Tableau</li><li>Excel</li><li>SPSS</li></ul></div>
         <div class="pouch"><p class="pk">CRM &amp; sales</p><ul class="chips"><li>HubSpot (advanced)</li><li>Zoho CRM</li><li>LinkedIn Sales Navigator</li><li>ZoomInfo</li><li>Apollo</li><li>Crunchbase</li><li>Zendesk</li><li>Salesforce (basics)</li></ul></div>
         <div class="pouch"><p class="pk">Email &amp; web</p><ul class="chips"><li>Mailchimp</li><li>Brevo</li><li>MailerLite</li><li>WordPress</li><li>HTML &amp; CSS</li><li>Google Business Profile</li></ul></div>
         <div class="pouch"><p class="pk">Design &amp; video</p><ul class="chips"><li>Canva</li><li>Adobe InDesign</li><li>CapCut</li></ul></div>
@@ -1264,7 +1267,7 @@ posthog.init('phc_npvvmxyec4uy5YvN9sv9xbhDRtZ4xEth6Y6MUhzMf5LA', {
         <div class="logo"><img src="assets/logos/gleamcave.png" alt="Gleamcave logo" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'mono',textContent:'G'}))"></div>
         <div>
           <h3>Gleamcave</h3>
-          <p>A behavioural-science-led marketing consultancy for experience-led businesses: hospitality, events, wellness and experiential retail. Its London nights, Indulge, Encore and Skip the Stress at Belushi’s, draw 60 to 100 guests each.</p>
+          <p>A behavioural-science-led marketing consultancy for experience-led businesses: hospitality, events, wellness and experiential retail. Its London nights, Indulge, Encore and Skip the Stress at Belushi’s, drew 60 to 100 guests each.</p>
           <span class="url">gleamcave.gr →</span>
         </div>
       </a>
@@ -1615,7 +1618,7 @@ document.querySelectorAll('.role[data-go]').forEach(function(r){
   });
   document.querySelectorAll('.power').forEach(function(p){IDX.push({kind:'skill',title:txt(p.querySelector('h3')),body:txt(p.querySelector('p')),summary:txt(p.querySelector('p')),go:'#powers'})});
   document.querySelectorAll('.htimeline .role').forEach(function(r){var y=txt(r.closest('li').querySelector('.y'));IDX.push({kind:'timeline',title:txt(r.querySelector('.w'))+' · '+txt(r.querySelector('.o')),body:y+' '+txt(r.querySelector('small')),summary:y+(r.querySelector('small')?' · '+txt(r.querySelector('small')):''),go:r.dataset.go||'#origin'})});
-  [['About me','origin story, background, Lagos, London, Greece, why I work this way','#origin'],['Skills and tools','powers, tools, toolkit, Google Ads, Meta Ads, LinkedIn Campaign Manager, Google Business Profile, Hootsuite, Pinterest, Google Analytics 4, Google Tag Manager, SEMrush, Ahrefs, Tableau, Excel, SPSS, HubSpot (advanced), Zoho CRM, LinkedIn Sales Navigator, ZoomInfo, Apollo, Crunchbase, Zendesk, Salesforce (working knowledge), Mailchimp, Brevo, MailerLite, WordPress, HTML & CSS, Canva, Adobe InDesign, CapCut, Eventbrite, Tagvenue, Squaremeal, Dice, RA, Claude, ChatGPT, Perplexity, Jira, Asana, Trello, Linear, GitHub, Slack, Microsoft 365, Google Workspace, AI tools','#powers'],['The growth flywheel','attract convert delight grow, how I work, process','#flywheel'],['Ventures','Gleamcave, Clothes for Humanity, founder, side projects','#ventures'],['Contact and hire me','email, LinkedIn, GitHub, hire, available now, remote, relocation','#signal']].forEach(function(s){IDX.push({kind:'page',title:s[0],body:s[1],summary:s[1],go:s[2]})});
+  [['About me','origin story, background, Lagos, London, Greece, why I work this way','#origin'],['Skills and tools','powers, tools, toolkit, Google Ads, Meta Ads, LinkedIn Campaign Manager, Google Business Profile, Hootsuite, Pinterest, Google Analytics 4, Google Tag Manager, PostHog, SEMrush, Ahrefs, Tableau, Excel, SPSS, HubSpot (advanced), Zoho CRM, LinkedIn Sales Navigator, ZoomInfo, Apollo, Crunchbase, Zendesk, Salesforce (working knowledge), Mailchimp, Brevo, MailerLite, WordPress, HTML & CSS, Canva, Adobe InDesign, CapCut, Eventbrite, Tagvenue, Squaremeal, Dice, RA, Claude, ChatGPT, Perplexity, Jira, Asana, Trello, Linear, GitHub, Slack, Microsoft 365, Google Workspace, AI tools','#powers'],['The growth flywheel','attract convert delight grow, how I work, process','#flywheel'],['Ventures','Gleamcave, Clothes for Humanity, founder, side projects','#ventures'],['Contact and hire me','email, LinkedIn, GitHub, hire, available now, remote, relocation','#signal']].forEach(function(s){IDX.push({kind:'page',title:s[0],body:s[1],summary:s[1],go:s[2]})});
   IDX.forEach(function(e){e.hay=(e.title+' '+e.body).toLowerCase()});
   var SYN={ai:['ai','ai-assisted','claude','chatgpt','perplexity'],sales:['sales','sold','close','closed','revenue','convert','upsell'],hotel:['hospitality','hotel','reception','guest'],restaurant:['hospitality','restaurant','bar'],charity:['charity','volunteer','fundrais','donation','raised'],money:['£','revenue','raised','sales'],contact:['contact','email','hire']};
   var TRY=['Sales results','Hospitality','AI','Events','Charity','Contact'];
